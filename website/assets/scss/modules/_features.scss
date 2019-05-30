@@ -1,0 +1,58 @@
+.feature {
+    margin-bottom: 2rem;
+    &__title {
+        font-family: $logo-font;
+        font-weight: normal;
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: $AH-mediumgrey;
+        @include atMedium {
+            font-size: 2.8rem;
+            line-height: 3rem;
+        }
+        @include atLarge {
+            font-size: 3.4rem;
+            line-height: 3.4rem;
+        }
+    }
+    &__subtitle {
+        font-family: $text-font;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+        color: $primary-text-color;
+        @include atMedium {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+        @include atLarge {
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+    &__text {
+        font-family: $text-font;
+        font-weight: normal;
+        font-size: 1.2rem;
+        text-align: left;
+        color: $secondary-text-color;
+        &--lead {
+            font-size: 1.2rem;
+            letter-spacing: 0.15rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        transition: 0.3s color ease-in-out;
+        color: $primary-text-color;
+        cursor: pointer;
+        &:hover, &:focus {
+            color: $AH-orange;
+            text-decoration: none;
+        }
+    }
+}

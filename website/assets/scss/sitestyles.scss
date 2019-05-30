@@ -1,0 +1,42 @@
+/*  vendors scss styles  */
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans:300,400,700|Poiret+One&subset=latin-ext');
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/utilities/text";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/animatewithsassclass/animate.scss";
+@import "../../../node_modules/lightgallery/src/sass/lightgallery.scss";
+/*  site specific scss styles  */
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/global";
+@import "base/typography";
+
+@import "modules/section";
+@import "modules/section-loading";
+@import "modules/section-hero";
+@import "modules/section-download";
+@import "modules/site-header";
+@import "modules/features";
+@import "modules/grid-layout";
+@import "modules/primary-nav";
+@import "modules/hero_carousel";
+@import "modules/buttons";
+@import "modules/filtering";
+@import "modules/project-card";
+@import "modules/social-links";
+@import "modules/progress";
+@import "modules/tech";
+@import "modules/site-footer";
+@import "modules/hamburger";
+@import "modules/spinner";
+@import "modules/scrollbars";
+@import "modules/tooltip";
+@import "modules/animations";

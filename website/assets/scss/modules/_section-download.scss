@@ -1,0 +1,53 @@
+.section-download {
+    .download {
+        position: relative;
+        &__title {
+            font-family: $headline-font;
+            color: $AH-lightgrey;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            text-align: right;
+        }
+        &__text {
+            font-family: $text-font;
+            color: $AH-lightgrey;
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+            text-align: right;
+        }
+        &__icon {
+            color: $AH-lightgrey;
+            font-size: 2rem;
+            line-height: 2rem;
+            text-align: left;
+            margin-right: 2rem;
+            transition: 0.1s color ease-in-out;
+            &--large {
+                font-size: 4rem;
+                &:hover, &:focus {
+                    color: $highlight-text-color;
+                }
+            }
+        }
+    }
+    
+}
+.animation-arrow {
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

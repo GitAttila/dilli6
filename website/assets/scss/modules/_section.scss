@@ -1,0 +1,58 @@
+.section {
+    padding: 2rem 0;
+    position: relative;
+    &__title {
+        font-family: $headline-font;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+        color: $secondary-text-color;
+        &--right {
+            text-align: right;
+        }
+        @include atMedium {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+        @include atLarge {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    @include atMedium {
+        padding: 3rem 0;
+    }
+    @include atLarge {
+        padding: 4rem 0;
+    }
+}
+
+.section-profile {
+    background-color: $AH-lightgrey;
+}
+.section-skills {
+    background-color: $secondary-background-color;
+}
+.section-projects {
+    background-color: $primary-background-color;
+}
+.section-awards {
+    background-color: $AH-mediumgrey;
+}
+
+.section-ie {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 1100;
+    .browsehappy {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+    }
+}

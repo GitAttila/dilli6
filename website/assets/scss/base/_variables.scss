@@ -1,0 +1,30 @@
+// ---------- Rang De Basanti Color Palette ---------- 
+$AH-darkergrey: rgb(58, 56, 54);
+$AH-darkgrey: rgb(100, 98, 96);
+$AH-mediumgrey: rgb(169, 168, 167);
+$AH-lightgrey: rgb(247, 246, 245);
+$AH-yellow: rgb(252, 219, 0);
+$AH-orange: rgb(247, 181, 0);
+// ---------- Site COLORS ---------- 
+$primary-text-color: $AH-darkgrey;
+$secondary-text-color: $AH-mediumgrey;
+$highlight-text-color: $AH-orange;
+$disabled-text-color: rgb(212, 211, 210);
+$primary-background-color: $AH-lightgrey;
+$secondary-background-color: $AH-darkgrey;
+$highlight-background-color: $AH-orange;
+$color-white: rgb(255, 255, 255);
+// ---------- Status COLORS ---------- 
+$danger-color: #DC3545;
+$warning-color: #FFC107;
+$success-color: #28A745;
+// ---------- FONTS ---------- 
+$logo-font: 'Poiret One',
+Times,
+serif;
+$headline-font: 'Anton',
+cursive;
+$text-font: "Josefin Sans",
+Helvetica,
+Arial,
+sans-serif;

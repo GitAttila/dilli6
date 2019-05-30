@@ -1,0 +1,60 @@
+.carousel-hero {
+    &__carousel-item {
+        height: 100vh;
+        &__img {
+            position: absolute;
+            left: -9999px;
+            right: -9999px;
+            margin: 0 auto;
+            min-width: 100%;
+            min-height: 100vh;
+            max-height: 100vw;
+            top: 50%;
+            transform: translateY(-50%);    
+            &--bw {
+                filter: grayscale(1);
+            }
+        }
+        &__img__overlay {
+            position: absolute;
+            left: -9999px;
+            right: -9999px;
+            margin: 0 auto;
+            min-width: 100%;
+            min-height: 100vh;
+            max-height: 100vw;
+            top: 50%;
+            transform: translateY(-50%); 
+            background: linear-gradient(to right, $AH-yellow, $AH-orange);
+            opacity: 0.6;
+        }
+    }
+    &__carousel-inner {
+        z-index: 1;
+    }
+    &__control-prev, &__control-next  {
+        z-index: 3;
+        &__icon {
+            font-size: 2rem;
+            @include atLarge{
+                font-size: 3rem;
+            }
+        }
+    }
+    &__carousel-indicators {
+        z-index: 4;
+        display: none;
+        @include atExtraSmallLandscape{
+            display: none;
+        }
+        @include atMedium{
+            display: flex;
+        }
+        @include atLarge{
+            display: flex;
+        }
+    }
+    .carousel-caption {
+        bottom: 3rem;
+    }
+}

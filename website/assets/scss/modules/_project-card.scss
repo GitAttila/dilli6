@@ -1,0 +1,151 @@
+.project-card {
+    position: relative;
+    background-color: $color-white;
+    color: $primary-text-color;
+    overflow: hidden;
+    &__caption {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        top: 50%;
+        width: 80%;
+        height: 100%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        hr {
+            color: $color-white;
+            border: 1px solid $color-white;
+            width: 100%;
+        }
+    }
+    &__logo {
+        height: 40%;
+        img {
+            height: 100%;
+            max-height:150px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;;
+        opacity: 0.6;
+        z-index: 1;
+        transition: 0.3s opacity ease-in-out;
+        &--secondary {
+            opacity: 0;
+        }
+    }
+    &__title {
+        font-family: $text-font;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        font-weight: bold;
+        color: $color-white;
+        text-align: center;
+    }
+    &__image {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        transform: scale(1.33);
+        transition: transform 0.3s ease-in-out;
+        img {
+            width: 100%;
+            transition: filter 0.3s ease-in-out;
+            filter: grayscale(1);
+        }
+        &--hidden {
+            display: none!important;
+        }
+    }
+    &__link, &__gallery {
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        right: 0;
+        width: 3rem;
+        height: 2rem;
+        background: rgba(0,0,0,0.5);
+        transition: 0.2s background ease-in-out;
+        &:hover {
+            background: linear-gradient(to right, $AH-yellow, $AH-orange);
+            text-decoration: none;
+        }
+        i {
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__gallery {
+        color: $color-white;
+        bottom: 0;
+        top: auto;
+    }
+    &:hover {
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        .project-card__overlay {
+            opacity: 0;
+            // background: rgba(0,0,0,0.5);
+            &--secondary {
+                opacity: 0.6;
+                mix-blend-mode: multiply;
+            }
+        }
+        .project-card__image {
+            transform: scale(1);
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
+    &--award {
+        background-color: rgba(255,255,255,0.8);
+        transition: 0.2s transform ease-in-out;
+        margin-bottom: 1rem;
+        &:hover {
+            transform: scale(1.05);
+        }
+        .project-card__title {
+            color: $secondary-text-color;
+        }
+        .project-card__caption {
+            position: relative;
+            z-index: 0;
+            left: inherit;
+            top: inherit;
+            width: inherit;
+            height: inherit;
+            transform: translate(0,0);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 1rem;
+            hr {
+                border-color: $secondary-text-color;
+            }
+        }
+        .project-card__logo {
+            width: 100%;
+            height: auto;
+            img {
+                width: 50%;
+            }
+            &--max-100 {
+                max-width: 100px;
+            }
+        }
+    }
+}

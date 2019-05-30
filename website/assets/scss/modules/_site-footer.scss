@@ -1,0 +1,49 @@
+.site-footer {
+    background-color: $secondary-background-color;
+    text-align: center;
+    /*background: url('../../assets/images/pattern_dark2.png');*/
+    .social-links__item-link {
+        color: $secondary-text-color;
+    }
+    &__image-wrapper {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 33%;
+        min-width: 250px;
+    }
+    &__image {
+        width: 100%;
+        &--opacity33 {
+            opacity: 0.33;
+        }
+    }
+    &__aknowledgements{
+        margin: 2rem 0;
+        &__text {
+            font-family: $text-font;
+            color: $secondary-text-color;
+            text-align: center;
+            margin: 0 auto;
+            p {
+                margin: 0;
+                @include atSmall{
+                    display: inline-block;
+                }
+            }
+            &--divider {
+                display: none;
+                @include atSmall{
+                    display: inline-block;
+                }
+            }
+            a{
+                color: $color-white;
+                text-decoration: none;
+                transition: 0.2s color ease-in-out;
+                &:hover, &:focus {
+                    color: $highlight-text-color;
+                }
+            }
+        }
+    }
+}

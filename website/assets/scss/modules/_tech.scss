@@ -1,0 +1,24 @@
+.section-tech {
+    background-color: transparent;
+    .section__title {
+        opacity: 0.4;
+        color: white;
+        text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+        // mix-blend-mode: multiply;
+        margin-bottom: 2rem;
+    }
+}
+
+.tech-stripe {
+    &__item-link {
+        &__image {
+            width: 90%;
+            max-width: 8rem;
+            display: block;
+            margin: auto;
+            filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4));
+            opacity: 0.6;
+            margin-bottom: 3rem;
+        }
+    }
+}
