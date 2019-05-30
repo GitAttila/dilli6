@@ -1,0 +1,100 @@
+@media (min-width: 2560px) {
+
+
+}
+
+@media only screen and (max-width: 2560px) {
+
+
+}
+
+/* Big tablet to 1200px (widths smaller than the 1200px row) */
+@media only screen and (max-width: 1200px) {
+    h2.display-1 {
+        font-size: 6rem;
+    }
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* Small tablet to big tablet: from 768px to 992px */
+@media only screen and (max-width: 991px) {
+
+}
+
+/* Small phones to small tablets: from 544px to 767px */
+@media only screen and (max-width: 767px) {
+    .footer p {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+}
+
+/* Small phones: from 0 to 576px */
+@media only screen and (max-width: 575px) {
+    .logo {
+        width: 40%;
+    }
+    .logo-100 {
+        width: 75%;
+        margin-bottom: 0.5rem;
+    }
+    .social-media{
+        margin-bottom: 0;
+    }
+    .social-media a{
+        margin-right: 0.3rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    h2.display-1 {
+        font-size: 3.5rem;
+    }
+    
+    h1.display-4 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .business-card p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .business-card p i{
+        font-size: 1.4rem;
+    }
+    .footer {
+        font-size: 1rem;
+        top: 0;
+        bottom: inherit;
+    }
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+    }
+    .social-media a i {
+        line-height: 3rem;
+    }
+    .menu-wrapper-drinks .menu-image-wrapper .carousel-inner { 
+        width: 100%;
+    }
+}
+
+
+
+/* Small phones to small tablets: from 576px to 767px  and landscape orientation */
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+    .col-md-5, .col-md-7 {
+        width: 50%;
+    }
+    .footer p {
+        margin: 1rem 50% 0 5%;
+    }
+    .logo-100 {
+        display: none!important;
+    }
+
+}
