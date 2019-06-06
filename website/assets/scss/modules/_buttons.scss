@@ -1,7 +1,7 @@
 .btn-site {
     position: relative;
     z-index: 2;
-    @include bgImageGradient($AH-mediumgrey, $AH-darkgrey);
+    @include bgImageGradient($D6-mediumgrey, $D6-darkgrey);
     color: $color-white;
     text-decoration: none;
     font-family: $logo-font;
@@ -22,7 +22,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        @include bgImageGradient($AH-yellow, $AH-orange);
+        @include bgImageGradient($D6-lightgreen, $D6-darkgreen);
         z-index: 1;
         transition: opacity 0.25s ease-in-out;
         opacity: 0;

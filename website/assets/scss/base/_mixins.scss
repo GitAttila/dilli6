@@ -42,5 +42,5 @@
     background-image: -ms-linear-gradient(left, $from, $to);
     background-image: -o-linear-gradient(left, $from, $to);
     background-image: linear-gradient(to right, $from, $to);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#646260, endColorstr=#3a3836);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr= $D6-lightgrey, endColorstr= $D6-mediumgrey);
 }

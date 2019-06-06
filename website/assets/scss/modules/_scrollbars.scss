@@ -9,9 +9,9 @@
   }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(to left, $AH-darkgrey, $AH-mediumgrey);
+    background: linear-gradient(to left, $D6-darkgrey, $D6-mediumgrey);
     -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.8);
   }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to left, $AH-yellow, $AH-orange);
+    background: linear-gradient(to left, $D6-lightgreen, $D6-darkgreen);
   }

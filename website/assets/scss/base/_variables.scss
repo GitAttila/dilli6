@@ -1,30 +1,25 @@
 // ---------- Rang De Basanti Color Palette ---------- 
-$AH-darkergrey: rgb(58, 56, 54);
-$AH-darkgrey: rgb(100, 98, 96);
-$AH-mediumgrey: rgb(169, 168, 167);
-$AH-lightgrey: rgb(247, 246, 245);
-$AH-yellow: rgb(252, 219, 0);
-$AH-orange: rgb(247, 181, 0);
+$D6-darkgrey: rgb(40, 38, 36);
+$D6-mediumgrey: rgb(130, 128, 126);
+$D6-lightgrey: rgb(198, 196, 194);
+$D6-yellow: rgb(229,207,103);
+$D6-lightblue: rgb(77,255,217);
+$D6-lightgreen: rgb(102,255,166);
+$D6-darkgreen: rgb(51,153,102);
 // ---------- Site COLORS ---------- 
-$primary-text-color: $AH-darkgrey;
-$secondary-text-color: $AH-mediumgrey;
-$highlight-text-color: $AH-orange;
+$primary-text-color: rgba(255,255,255,0.8);
+$secondary-text-color: $D6-lightgrey;
+$highlight-text-color: rgba(255,255,255,1);
 $disabled-text-color: rgb(212, 211, 210);
-$primary-background-color: $AH-lightgrey;
-$secondary-background-color: $AH-darkgrey;
-$highlight-background-color: $AH-orange;
+$primary-background-color: $D6-mediumgrey;
+$secondary-background-color:$D6-darkgreen;
+$highlight-background-color: $D6-yellow;
 $color-white: rgb(255, 255, 255);
 // ---------- Status COLORS ---------- 
 $danger-color: #DC3545;
 $warning-color: #FFC107;
 $success-color: #28A745;
 // ---------- FONTS ---------- 
-$logo-font: 'Poiret One',
-Times,
-serif;
-$headline-font: 'Anton',
-cursive;
-$text-font: "Josefin Sans",
-Helvetica,
-Arial,
-sans-serif;
+$logo-font: 'Six Caps', sans-serif;
+$headline-font: 'Anton', sans-serif;
+$text-font: "Lato", Helvetica, Arial, sans-serif;

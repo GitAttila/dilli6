@@ -7,7 +7,7 @@
         line-height: 2.6rem;
         margin-bottom: 1rem;
         text-align: left;
-        color: $AH-mediumgrey;
+        color: $D6-mediumgrey;
         @include atMedium {
             font-size: 2.8rem;
             line-height: 3rem;
@@ -51,7 +51,7 @@
         color: $primary-text-color;
         cursor: pointer;
         &:hover, &:focus {
-            color: $AH-orange;
+            color: $D6-lightgreen;
             text-decoration: none;
         }
     }

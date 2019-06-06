@@ -36,17 +36,17 @@ input {
 }
 
 .gradient {
-    &--yelloworange {
-        background: linear-gradient(to right, $AH-yellow, $AH-orange);
+    &--lightgreendarkgreen {
+        background: linear-gradient(to right, $D6-lightgreen, $D6-darkgreen);
+    }
+    &--yellowdarkgreenlightgreen {
+        background: linear-gradient(to left, $D6-yellow, $D6-lightgreen, $D6-darkgreen);
+    }
+    &--lightbluelightgreen {
+        background: linear-gradient(to right, $D6-lightblue, $D6-lightgreen);
     }
     &--mediumgreydarkgrey {
-        background: linear-gradient(to left, $AH-mediumgrey, $AH-darkgrey);
-    }
-    &--darkergreydarkgrey {
-        background: linear-gradient(to right, $AH-darkergrey, $AH-darkgrey);
-    }
-    &--multiply {
-        mix-blend-mode: multiply;
+        background: linear-gradient(to right, $D6-mediumgrey, $D6-darkgrey);
     }
 }
 
@@ -66,23 +66,23 @@ input {
 }
 
 .text-gradient {
-    &--yelloworange {
-        background: linear-gradient(to bottom, $AH-yellow, $AH-orange);
+    &--lightgreendarkgreen {
+        background: linear-gradient(to bottom, $D6-lightgreen, $D6-darkgreen);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    &--darkergreydarkgrey {
-        background: linear-gradient(to bottom, $AH-darkergrey, $AH-darkgrey);
+    &--yellowdarkgreenlightgreen {
+        background: linear-gradient(to bottom, $D6-yellow, $D6-lightgreen, $D6-darkgreen);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &--lightbluelightgreen {
+        background: linear-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     &--mediumgreydarkgrey {
-        background: linear-gradient(to bottom, $AH-darkgrey, $AH-mediumgrey);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    &--lightgreymediumgrey {
-        background: linear-gradient(to bottom, $AH-mediumgrey, $AH-lightgrey);
+        background: linear-gradient(to bottom, $D6-mediumgrey, $D6-darkgrey);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
