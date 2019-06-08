@@ -17,15 +17,11 @@
         }
         &__img__overlay {
             position: absolute;
-            left: -9999px;
-            right: -9999px;
-            margin: 0 auto;
             min-width: 100%;
             min-height: 100vh;
             max-height: 100vw;
             top: 50%;
             transform: translateY(-50%); 
-            background: linear-gradient(to right, $D6-lightgreen, $D6-darkgreen);
             opacity: 0.6;
         }
     }

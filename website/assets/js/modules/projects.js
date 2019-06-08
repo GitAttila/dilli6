@@ -47,6 +47,7 @@ class Projects {
             );
         });
         imgLoaded.on( 'progress', function( instance, image ) {
+            // console.log(instance);
             if (image.isLoaded) {
                 $('#loading-spinner .progress__status').width(instance.progressedCount / instance.images.length * 100 + '%');
             } else {

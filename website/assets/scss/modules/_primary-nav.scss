@@ -1,30 +1,18 @@
 .primary-nav {
-    position: absolute;
-    width: 100%;
-    top: 4rem;
-    right: 0;
-    z-index: 1000;
+    margin-top: 4rem;
     transition: all 0.5s ease-in-out;
     .container {
         position: relative;
     }    
     @include atSmall {
-        top: 10rem;
+
     }
     @include atMedium {
-        width: 10rem;
-        top: 10rem;
+
     }
     &__items-wrapper {
-        margin: 1rem;
-        padding: 2rem 1rem;
-        border-radius: 3rem;
         display: flex;
         flex-direction: column;
-        background-color: $color-white;
-        @include atMedium {
-            border-radius: 5rem;
-        }
     }
     &__item {
         list-style: none;
@@ -51,7 +39,7 @@
             text-decoration: none;
         }
         &--active {
-            background-color: $highlight-text-color;
+            background-color: $D6-yellow;
             color: $color-white!important;
             &:hover, &:focus  {
                 color: $color-white;

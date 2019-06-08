@@ -2,10 +2,10 @@
 $D6-darkgrey: rgb(40, 38, 36);
 $D6-mediumgrey: rgb(130, 128, 126);
 $D6-lightgrey: rgb(198, 196, 194);
-$D6-yellow: rgb(229,207,103);
-$D6-lightblue: rgb(77,255,217);
-$D6-lightgreen: rgb(102,255,166);
-$D6-darkgreen: rgb(51,153,102);
+$D6-yellow: rgba(229,207,103,1);
+$D6-lightblue: rgba(77,255,217,1);
+$D6-lightgreen: rgba(102,255,166,1);
+$D6-darkgreen: rgba(51,153,102,1);
 // ---------- Site COLORS ---------- 
 $primary-text-color: rgba(255,255,255,0.8);
 $secondary-text-color: $D6-lightgrey;

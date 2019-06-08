@@ -40,7 +40,7 @@ input {
         background: linear-gradient(to right, $D6-lightgreen, $D6-darkgreen);
     }
     &--yellowdarkgreenlightgreen {
-        background: linear-gradient(to left, $D6-yellow, $D6-lightgreen, $D6-darkgreen);
+        background: linear-gradient( -55deg, $D6-yellow 0%, $D6-darkgreen 67%, $D6-lightgreen 100%);
     }
     &--lightbluelightgreen {
         background: linear-gradient(to right, $D6-lightblue, $D6-lightgreen);
@@ -109,4 +109,19 @@ input {
 
 .filter-shadow1 {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.filter {
+    &--desaturate {
+        filter: saturate(0);
+    }
+}
+
+.blend {
+    &--overlay {
+        mix-blend-mode: overlay;
+    }
+    &--multiply {
+        mix-blend-mode: multiply;
+    }
 }
