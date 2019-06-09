@@ -1,20 +1,20 @@
-// ---------- Rang De Basanti Color Palette ---------- 
+// ---------- DILLI6 Color Palette ---------- 
 $D6-darkgrey: rgb(40, 38, 36);
 $D6-mediumgrey: rgb(130, 128, 126);
 $D6-lightgrey: rgb(198, 196, 194);
-$D6-yellow: rgba(229,207,103,1);
-$D6-lightblue: rgba(77,255,217,1);
-$D6-lightgreen: rgba(102,255,166,1);
-$D6-darkgreen: rgba(51,153,102,1);
+$D6-yellow: #E5CF67;
+$D6-lightblue: #45DAC3;
+$D6-lightgreen: #57D998;
+$D6-darkgreen: #2E8C5E;
+$color-white: rgb(255, 255, 255);
 // ---------- Site COLORS ---------- 
-$primary-text-color: rgba(255,255,255,0.8);
+$primary-text-color: $D6-mediumgrey;
 $secondary-text-color: $D6-lightgrey;
-$highlight-text-color: rgba(255,255,255,1);
+$highlight-text-color: $D6-yellow;
 $disabled-text-color: rgb(212, 211, 210);
-$primary-background-color: $D6-mediumgrey;
+$primary-background-color: $color-white;
 $secondary-background-color:$D6-darkgreen;
 $highlight-background-color: $D6-yellow;
-$color-white: rgb(255, 255, 255);
 // ---------- Status COLORS ---------- 
 $danger-color: #DC3545;
 $warning-color: #FFC107;
