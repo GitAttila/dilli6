@@ -4,7 +4,7 @@
     background-color: $primary-background-color;
     &__title {
         font-family: $logo-font;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 3rem;
         margin-bottom: 0;
         color: $D6-lightblue;
@@ -17,7 +17,7 @@
     }
     &__subtitle {
         font-family: $headline-font;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 2rem;
         margin-bottom: 0.5rem;
         color: $D6-yellow;
@@ -72,6 +72,9 @@
 
 .section-about{
     
+}
+.section-menu-concept {
+    background-color: $D6-mediumgrey;
 }
 .section-menu {
     background-color: $secondary-background-color;

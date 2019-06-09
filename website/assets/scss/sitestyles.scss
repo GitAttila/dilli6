@@ -21,14 +21,18 @@
 
 @import "modules/section";
 @import "modules/section-loading";
+@import "modules/primary-nav";
 @import "modules/section-hero";
-@import "modules/section-download";
 @import "modules/site-header";
+@import "modules/buttons";
+@import "modules/menu_stepper";
+
+@import "modules/section-download";
 @import "modules/features";
 @import "modules/grid-layout";
-@import "modules/primary-nav";
+
 @import "modules/hero_carousel";
-@import "modules/buttons";
+
 @import "modules/filtering";
 @import "modules/project-card";
 @import "modules/social-links";
