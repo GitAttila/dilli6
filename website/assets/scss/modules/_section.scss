@@ -1,24 +1,66 @@
 .section {
     padding: 2rem 0;
     position: relative;
+    background-color: $primary-background-color;
     &__title {
-        font-family: $headline-font;
+        font-family: $logo-font;
         font-weight: bold;
         font-size: 3rem;
-        margin-bottom: 0.5rem;
-        text-align: left;
-        color: $secondary-text-color;
-        &--right {
-            text-align: right;
-        }
+        margin-bottom: 0;
+        color: $D6-lightblue;
         @include atMedium {
             font-size: 4rem;
-            margin-bottom: 0.5rem;
         }
         @include atLarge {
             font-size: 5rem;
+        }
+    }
+    &__subtitle {
+        font-family: $headline-font;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: $D6-yellow;
+        @include atMedium {
+            font-size: 2.6rem;
+            margin-bottom: 0.5rem;
+        }
+        @include atLarge {
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
+    }
+    &__text{
+        font-family: $text-font;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        color: $primary-text-color;
+        @include atMedium {
+            font-size: 1.2rem;
+        }
+        @include atLarge {
+            font-size: 1.4rem;
+        }
+        &--lead {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: $secondary-text-color;
+            @include atLarge {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__text-left{
+        text-align: left;
+    }
+    &__text-center {
+        text-align: center;
+    }
+    &__text-right {
+        text-align: right;
+    }
+    &__text-right {
+        text-align: right;
     }
     @include atMedium {
         padding: 3rem 0;
@@ -29,7 +71,7 @@
 }
 
 .section-about{
-    background-color: $D6-lightgrey;
+    
 }
 .section-menu {
     background-color: $secondary-background-color;

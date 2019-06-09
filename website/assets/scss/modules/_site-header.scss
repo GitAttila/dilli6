@@ -24,8 +24,15 @@
         font-weight: 400;
         font-family: $logo-font;
         color: $primary-text-color;
+        transition: 0.3s color ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
         @include atSmall {
             height: 4rem;
+        }
+        &:hover, &:focus  {
+            color: $D6-lightblue;
+            text-decoration: none;
         }
         &--main  {
             font-family: $logo-font;
