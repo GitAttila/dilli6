@@ -4,13 +4,18 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    &.carousel-indicators {
+        &.active {
+            opacity: 0.8;
+        }
+    }
     &--bottom {
         position: absolute;
         bottom: 0;
         margin: 2rem;
     }
     &__step {
-        opacity: 0.8;
+        opacity: 0.67;
         transition: 0.3s opacity ease-in-out, 0.3s filter ease-in-out, 0.3s transform ease-in-out;
         img {
             width: 100%;
@@ -34,7 +39,7 @@
                 height: 3rem;
             }
         }
-        &:hover, &:focus {
+        &:hover, &:focus, &--active {
             filter: drop-shadow(0 6px 9px rgba(0,0,0,0.75));
             opacity: 1;
             transform: scale(1.1);
@@ -50,25 +55,6 @@
         }
         @include atMedium {
             font-size: 4rem;
-        }
-    }
-    &__carousel__prev {
-        .carousel-control-prev-icon {
-            background-image: none;
-        }
-    }
-    &__carousel__next {
-        .carousel-control-next-icon {
-            background-image: none;
-        }
-    }
-    &__carousel-item {
-        img {
-            height: 50vw;
-            width: auto;
-            margin: 0 auto;
-            display: block;
-            filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.75));
         }
     }
     &__carousel-caption {
@@ -102,5 +88,12 @@
             }
         }
     }
-
+    &__carousel__item {
+        img {
+            height: 50vw;
+            width: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    }
 }

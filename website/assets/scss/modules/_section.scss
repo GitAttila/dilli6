@@ -33,7 +33,7 @@
     &__text{
         font-family: $text-font;
         font-size: 1.2rem;
-        margin-bottom: 0;
+        margin-bottom: 0.5rem;
         color: $primary-text-color;
         @include atMedium {
             font-size: 1.2rem;
@@ -49,18 +49,18 @@
                 font-size: 1.6rem;
             }
         }
+        &-left{
+            text-align: left;
+        }
+        &-center {
+            text-align: center;
+        }
+        &-right {
+            text-align: right;
+        }
     }
-    &__text-left{
-        text-align: left;
-    }
-    &__text-center {
-        text-align: center;
-    }
-    &__text-right {
-        text-align: right;
-    }
-    &__text-right {
-        text-align: right;
+    &__quote {
+        font-size: 2rem;
     }
     @include atMedium {
         padding: 3rem 0;
@@ -72,6 +72,9 @@
 
 .section-about{
     
+}
+.section-people{
+    background-color: rgba(240,238,236,1);
 }
 .section-menu-concept {
     background-color: $D6-mediumgrey;

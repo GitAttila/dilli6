@@ -1,20 +1,20 @@
 .feature {
     margin-bottom: 2rem;
     &__title {
-        font-family: $logo-font;
+        font-family: $script-font;
         font-weight: normal;
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-        margin-bottom: 1rem;
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+        margin-bottom: 0.5rem;
         text-align: left;
         color: $D6-mediumgrey;
         @include atMedium {
-            font-size: 2.8rem;
-            line-height: 3rem;
+            font-size: 4rem;
+            line-height: 4rem;
         }
         @include atLarge {
-            font-size: 3.4rem;
-            line-height: 3.4rem;
+            font-size: 5rem;
+            line-height: 5rem;
         }
     }
     &__subtitle {
@@ -24,7 +24,9 @@
         line-height: 1.6rem;
         margin-bottom: 0.5rem;
         text-align: left;
-        color: $primary-text-color;
+        color: $secondary-text-color;
+        letter-spacing: 0.3rem;
+        font-style: italic;
         @include atMedium {
             font-size: 1.6rem;
             line-height: 1.8rem;

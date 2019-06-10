@@ -6,12 +6,18 @@ class Carousels {
         this.carousels = 
             [
                 {
-                    selector: '#mainHeroCarousel',
-                    interval: 11000,
+                    selector: '#carousel-menu-stepper',
+                    interval: 7000,
+                    ride: true
+                },
+                {
+                    selector: '#carousel-team',
+                    interval: 3000000,
                     ride: true
                 }
             ]
         this.initCarousels(this.carousels);
+        this.events();
     }
 
     initCarousels(carousels) { 
@@ -22,6 +28,14 @@ class Carousels {
                 ride: element.ride
             });
         });
+    }
+
+    events() {
+        $('#carousel-menu-stepper').on('slid.bs.carousel', function () {
+            let num = $(this).children().children('.carousel-item.active').data('slidenum');
+            $(this).children().children('.carousel-indicators').children('.menu-stepper__step').removeClass('menu-stepper__step--active');
+            $(this).children().children('.carousel-indicators').children('.menu-stepper__step').eq(num).addClass('menu-stepper__step--active');
+        })
     }
 
 }

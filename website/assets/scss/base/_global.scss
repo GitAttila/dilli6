@@ -108,7 +108,13 @@ input {
 }
 
 .filter-shadow1 {
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.67));
+}
+.filter-shadow2 {
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.67));
+}
+.filter-shadow3 {
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.67));
 }
 
 .filter {
