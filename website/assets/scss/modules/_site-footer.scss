@@ -19,7 +19,7 @@
         width: 100%;
     }
     &__aknowledgements{
-        margin: 2rem 0;
+        margin-top:2rem;
         &__text {
             font-family: $text-font;
             color: $secondary-text-color;
@@ -48,20 +48,43 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.1;
-        background: url('../../../assets/images/d6_logo_tiles_white.png');
+        opacity: 0.25;
+        mix-blend-mode: soft-light;
+        background-attachment: fixed;
+        background-image: url('../../../assets/images/d6_logo_tiles_white.png');
     }
-    &__eet-msg {
-        font-size: 0.8rem;
-        line-height: 1rem;
-        min-height: 3rem;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.6);
-        color: rgba(255,255,255,0.75);
+    &__author {
+        background-color: $D6-mediumgrey;
+        color: rgba(255,255,255,0.5);
+        padding: 1rem 0;
+        &--wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            text-align: center;
+        }
+        &--img {
+            margin-right: 1rem;
+            img {
+                opacity: 0.5;
+                max-height: 2rem;
+                width: auto;;
+            }
+        }
     }
+    &__post {
+        background-color: $D6-darkgrey;
+        color: rgba(255,255,255,0.5);
+        padding: 1rem 0;
+        &__eet-msg {
+            font-size: 0.8rem;
+            line-height: 1rem;
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
 }
