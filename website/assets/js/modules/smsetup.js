@@ -168,9 +168,9 @@ class Animations {
             .addTo(_self.controller);
         });
 
-        let staggerTech = TweenMax.staggerTo(".tech-animation", 0.3, {transform: "scale(1)", ease: Back.easeOut}, 0.2);
+        let staggerTech = TweenMax.staggerTo(".animation__supplier", 0.3, {transform: "scale(1)", ease: Back.easeOut}, 0.2);
         new ScrollMagic.Scene({
-            triggerElement: ".section-tech",
+            triggerElement: ".section-suppliers",
             triggerHook: 0.66,
         })
         .setTween(staggerTech)

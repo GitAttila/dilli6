@@ -4,7 +4,7 @@
     @include bgImageGradient($D6-mediumgrey, $D6-darkgrey);
     color: $color-white;
     text-decoration: none;
-    font-family: $logo-font;
+    font-family: $headline-font;
     font-weight: 400;
     padding: 0.5rem 1rem;
     display: inline-block;
@@ -95,5 +95,28 @@
         .btn-site__label {
             font-size: 2rem;
         }
+    }
+}
+.btn__jump-down {
+    position: absolute;
+    z-index: 100;
+    bottom: -2rem;
+    left: 50%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: $color-white;
+    color: $primary-text-color;
+    transition: color 0.25s ease-in-out;
+    &--icon-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%, -80%);
+    }
+    &:hover {
+        color: $highlight-text-color;
     }
 }

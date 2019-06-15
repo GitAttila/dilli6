@@ -1,0 +1,60 @@
+.parallax {
+    &__container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-image: url('../../../assets/images/parallax/d6_parallax_01.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        &--image2 {
+            background-image: url('../../../assets/images/parallax/d6_parallax_02.jpg');
+        }
+        &--bw {
+            filter: saturate(0);
+        }
+    }
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.5);
+        &--gradient {
+            opacity: 0.8;
+            mix-blend-mode: multiply;
+        }
+    }
+    &__content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    &__title {
+        color: $color-white;
+        font-size: 3rem;
+        @include atMedium {
+            font-size: 5rem;
+        }
+        @include atLarge {
+            font-size: 7rem;
+        }
+    }
+
+}

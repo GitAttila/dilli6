@@ -1,8 +1,29 @@
-.tech-animation {
+.animation__supplier {
     transform: scale(0);
 }
 
-.award-animation {
+.animation__award {
     transform: translateY(50%);
     opacity: 0;
+}
+
+.animation__jump-down {
+    animation-name: jumpdown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+}
+
+@keyframes jumpdown {
+    0% {
+        transform: translate(-50%,-80%);
+    }
+    50% {
+        transform: translate(-50%,-100%);
+    }
+    100% {
+        transform: translate(-50%,-80%);
+    }
 }

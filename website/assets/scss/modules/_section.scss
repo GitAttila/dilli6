@@ -77,8 +77,16 @@
     background-color: rgba(240,238,236,1);
 }
 .section-menu-concept {
-    background-color: $D6-mediumgrey;
+    background-color: rgba(240,238,236,1);
 }
+.section-parallax {
+    padding: 0;
+    height: 40vh;
+    @include atMedium {
+        height: 50vh;
+    }
+}
+
 .section-menu {
     background-color: $secondary-background-color;
 }
