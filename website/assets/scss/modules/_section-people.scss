@@ -1,0 +1,17 @@
+.section-people{
+    background-color: rgba(240,238,236,1);
+    &__person {
+        &__portrait {
+            img {
+                width: 50%;
+                @include atSmall{
+                    width: 60%;
+                }
+                @include atMedium {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

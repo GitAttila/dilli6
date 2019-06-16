@@ -12,6 +12,11 @@ class Carousels {
                 },
                 {
                     selector: '#carousel-team',
+                    interval: 700000,
+                    ride: true
+                },
+                {
+                    selector: '#carousel-meals-menu',
                     interval: 3000000,
                     ride: true
                 }

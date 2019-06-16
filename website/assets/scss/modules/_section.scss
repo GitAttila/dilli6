@@ -73,12 +73,6 @@
 .section-about{
     
 }
-.section-people{
-    background-color: rgba(240,238,236,1);
-}
-.section-menu-concept {
-    background-color: rgba(240,238,236,1);
-}
 .section-parallax {
     padding: 0;
     height: 40vh;
@@ -86,6 +80,13 @@
         height: 50vh;
     }
 }
+.section-menu-concept {
+    background-color: rgba(240,238,236,1);
+}
+.section-menu-meals {
+    background-color: rgba(240,238,236,1);
+}
+
 
 .section-menu {
     background-color: $secondary-background-color;
