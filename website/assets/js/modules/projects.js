@@ -5,7 +5,7 @@ import Animations from './smsetup';
 class Projects {
 
     constructor() {
-        this.projectsGridEl = $('#projectsGrid');
+        this.projectsGridEl = $('#drinksGrid');
         this.galleriesKeys = ['dilli6', 'RA-calendar', 'spars', 'RA-loginpage', 'RA-merchendise', 'kamenictvi', 'RA-dm', 'KE', 'PF', 'bwmagazine', 'photoshoots', 'ra-manage', 'ftc' ];
         this.projectsGrid;
         this.initProjectsGrid();
@@ -60,7 +60,7 @@ class Projects {
         let lastNavMenuClicked='all';
         self = this;
         grid = grid || self.projectsGrid;
-        $("#project-filter [data-filter]").on('click', function(e){
+        $("#menu-filter [data-filter]").on('click', function(e){
             let isFilterItemDisabled = $(this).hasClass('btn-site--disabled');
             e.preventDefault();
             let filterValue = $(this).data('filter').toLowerCase().trim();
@@ -70,9 +70,9 @@ class Projects {
             console.log(filterValue, lastNavMenuClicked);
             lastNavMenuClicked = filterValue;
 
-            $("#project-filter .filter__item").removeClass("btn-site--active");
+            $("#menu-filter .filter__item").removeClass("btn-site--active");
             $(this).addClass("btn-site--active");
-            $('#project-filter .filter__item').addClass('btn-site--disabled');
+            $('#menu-filter .filter__item').addClass('btn-site--disabled');
 
             // collapse the nav menu on mobile after a menu item has been clicked
             if ($("#menuContent").hasClass('show')) {
@@ -99,7 +99,7 @@ class Projects {
                 $(filteredItems).each(function(key,val){
                     $(val.element).stop().animateCss('pulse', key * delayed, ()=>{
                         if (key === (filteredItems.length-1)) {
-                            $('#project-filter .filter__item').removeClass('btn-site--disabled');
+                            $('#menu-filter .filter__item').removeClass('btn-site--disabled');
                             // console.log('animation completed...');
                         }
                     });
@@ -108,7 +108,7 @@ class Projects {
 
         });
 
-        $('#projectsGrid .project-card').on('click', function(){
+        $('#drinksGrid .project-card').on('click', function(){
             $(this).children().children('.project-card__gallery').animateCss('bounceIn');
         });
 

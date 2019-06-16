@@ -6,12 +6,11 @@ html {
 
 body {
     color: $primary-text-color;
+    background-color: $color-white;
     font-family: $text-font;
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
-    background-color: $primary-background-color;
-    // background-color: transparent;
     font-size: 1rem;
     overflow-x: hidden;
     @include atLarge {
@@ -55,10 +54,13 @@ input {
         );
     }
     &--lightbluelightgreen {
-        background: linear-gradient(to right, $D6-lightblue, $D6-lightgreen);
+        background: linear-gradient(-55deg, $D6-lightblue, $D6-lightgreen);
+    }
+    &--lightbluedarkgreen {
+        background: linear-gradient(-55deg, $D6-lightblue, $D6-darkgreen);
     }
     &--mediumgreydarkgrey {
-        background: linear-gradient(to right, $D6-mediumgrey, $D6-darkgrey);
+        background: linear-gradient(-55deg, $D6-mediumgrey, $D6-darkgrey);
     }
 }
 
@@ -66,13 +68,18 @@ $class-slug:layer__opacity !default;
 
 @for $i from 0 through 10 {
     .#{$class-slug}-#{$i*10} {
-        opacity: ($i * 10)/100;
+        opacity: ($i * 10)/100!important;
     }
 }
 
 .text-gradient {
     &--lightgreendarkgreen {
         background: linear-gradient(to bottom, $D6-lightgreen, $D6-darkgreen);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &--lightbluelightgreen {
+        background: linear-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
