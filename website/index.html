@@ -118,7 +118,7 @@
       <section class="section-hero section-hero__video">
 
             <div class="section-hero__video-wrapper">
-                  <video class="section-hero__video-bg filter--desaturate" poster="poster.png" autoplay muted loop>
+                  <video class="section-hero__video-bg filter--desaturate" poster="" autoplay muted loop>
                         <source src="./assets/videos/streetfood.mp4" type="video/mp4">
                         <img src="./assets/images/hero/d6_hero_02.jpg" alt="dilli6 fallback video image">
                   </video>
@@ -129,9 +129,9 @@
                         <div class="section-hero__logocontainer">
                               <img src="./assets/images/d6_logo_white_tags.png" alt="dilli6 logo white">
                         </div>
-                        <div class="btn-site btn-site--rounded btn-site--outline">
+                        <a href= "https://www.restu.cz/widget-beta/?restaurant_id=33863&date=2019-07-13&time=11%3A30&seats=2" target = "_blank" class="btn-site btn-site--rounded btn-site--outline">
                               <span class="btn-site__label">make a reservation</span>
-                        </div>
+                        </a>
                         <!-- <h1 class="section-hero__title">&horbar;indian&horbar;bistro&horbar;and bar&horbar;</!-->
                   </div>
             </div>
@@ -154,6 +154,81 @@
                   <p class="section__text section__text-center">We are culinary Professionals, with over 8 years in the Industry and after exploring 3 continents and gathering great 
                               exposure in the field we are here to embark our journey on a new milestone.</p>    
                   <p class="section__text section__text-center">Delicious Food , Signature Cocktails and a Unique Concept.</p>   
+            </div>
+
+      </section>
+
+      <section class="section section-gallery">
+            <div class="gallery__wrapper" id="about-gallery">
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_01.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_01.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_02.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_02.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_03.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_03.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                        </div>
+                  </div>
+
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_04.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_04.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <div class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_05.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_05.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <div class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_06.jpg">
+                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_06.jpg" alt="">
+                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        <div class="gallery__overlay">
+                              <div class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
 
       </section>
@@ -1742,7 +1817,6 @@
                               </div>
                         </div>
 
-
                   </div>
                   <!-- isotope grid  END-->
             </div>
@@ -1781,6 +1855,12 @@
                               </div>
                         </div>
                   </div>
+            </div>
+      </section>
+
+      <section class="section section-contact">
+            <div class="contact__map" id="contact-map">
+
             </div>
       </section>
 
@@ -1837,6 +1917,8 @@
       <!-- build:js ./assets/js/app.js -->
       <script src="temp/js/App.js" type="text/javascript"></script>
       <!-- endbuild -->
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASZmGU29armXP98VckGs6dZvJco5vwDLU&callback=initMap"></script>
 
 </body>
 

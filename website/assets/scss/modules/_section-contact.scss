@@ -1,0 +1,9 @@
+.section-contact {
+    padding: 0;
+}
+.contact {
+    &__map {
+        height: 50vh;
+        background-color: $D6-lightgrey;
+    }
+}

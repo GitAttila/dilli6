@@ -155,4 +155,7 @@ $class-slug:layer__opacity !default;
     &--multiply {
         mix-blend-mode: multiply;
     }
+    &--color {
+        mix-blend-mode: color;
+    }
 }

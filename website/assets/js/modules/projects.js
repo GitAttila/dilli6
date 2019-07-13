@@ -2,6 +2,7 @@ import Isotope from 'isotope-layout';
 import 'isotope-layout/js/layout-modes/fit-rows';
 import imagesLoaded from 'imagesloaded';
 import Animations from './smsetup';
+import Gallery from './gallery';
 class Projects {
 
     constructor() {
@@ -13,6 +14,7 @@ class Projects {
             this.projectsGrid.layout();
         };
         this.anims = new Animations();
+        this.gallery= new Gallery();
     }
 
     initProjectsGrid() {
@@ -33,9 +35,9 @@ class Projects {
                     }
                 });
                 self.events(self.projectsGrid);
-                self.initGalleries();
                 // initialize animations here
                 self.anims.events();
+                self.gallery.setGalleryClasses();
 
                 $('section.section-loading').fadeOut(1000, function(){});
 
@@ -114,18 +116,6 @@ class Projects {
 
     }
 
-    
-    initGalleries() {
-        var self = this;
-        $(document).ready(function() {
-            $.each(self.galleriesKeys, function(key, val) {
-                let galKey = val.trim().toLowerCase();
-                let idSelector = "#" + galKey + "-gallery";
-                $(idSelector).lightGallery(); 
-            });
-            console.log('galleries initialized');
-        });
-    }
 }
 
 export default Projects;

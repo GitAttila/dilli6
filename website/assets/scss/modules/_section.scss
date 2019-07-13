@@ -73,6 +73,9 @@
 .section-about{
     
 }
+.section-gallery{
+    
+}
 .section-parallax {
     padding: 0;
     height: 40vh;
@@ -89,14 +92,15 @@
 .section-menu-drinks {
     background-color: rgba(240,238,236,1);
 }
-
 .section-gallery {
     background-color: $primary-background-color;
 }
 .section-contact {
     background-color: $D6-mediumgrey;
 }
-
+.section-suppliers {
+    background-color: transparent;
+}
 .section-ie {
     width: 100%;
     height: 100vh;

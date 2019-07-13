@@ -1,0 +1,85 @@
+.section-gallery {
+    padding: 0;
+}
+.gallery {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__img {
+        position: absolute;
+        z-index: 0;
+        left: -9999px;
+        right: -9999px;
+        margin: 0 auto;
+        height: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: grayscale(1);
+        transition: 0.3s filter ease-in-out, 0.3s transform ease-in-out;
+        transform-origin: center 300%;
+        &--hidden {
+            display: none;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s background ease-in-out;
+    }
+    &__icon {
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        text-shadow: 0 2px 3px rgba(0,0,0,0.8);
+        &__wrapper {
+            position: absolute;
+            width: 6rem;
+            height: 6rem;
+            border: 4px solid $color-white;
+            border-radius: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.6);
+            box-shadow: 0 0 2rem rgba(255,255,255,1);
+            opacity: 1;
+            transition: 0.3s opacity ease-in-out;
+            cursor: pointer;
+        }
+    }
+    &__img-wrapper {
+        position: relative;
+        height: 33vh;
+        overflow: hidden;
+        flex: 1 1 100%;
+        @include atMedium {
+            flex: 1 1 50%;
+        }
+        @include atLarge {
+            flex: 1 1 25%;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.2);
+            }
+            .gallery__overlay {
+                background: none;
+            }
+            .gallery__icon__wrapper {
+                opacity: 0.33;
+            }
+        }
+    }
+}
