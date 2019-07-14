@@ -53,6 +53,10 @@
             color: $color-white;
         }
     }
+    &:focus {
+        color: $color-white;
+        outline: 0;
+    }
 
     &--rounded {
         border-radius: 3rem;
