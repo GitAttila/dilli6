@@ -6,7 +6,13 @@
         height: 60vh;
         background-color: $D6-lightgrey;
         @include atSmall{
-            height: 50vw;
+            height: 50vh;
+        }
+        @include atMedium{
+            height: 50vh;
+        }
+        @include atLarge{
+            height: 40vh;
         }
     }
     &__info {
