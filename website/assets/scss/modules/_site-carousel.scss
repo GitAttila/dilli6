@@ -1,9 +1,9 @@
 .site-carousel {
     &__prev, &__next {
         font-size: 2rem;
-            @include atMedium {
-                font-size: 3rem;
-            }
+        @include atMedium {
+            font-size: 3rem;
+        }
     }
     &__prev {
         .carousel-control-prev-icon {
@@ -22,5 +22,9 @@
             margin: 0 auto;
             display: block;
         }
+    }
+    &__inner {
+        width: 80%;
+        margin: 0 auto;
     }
 }

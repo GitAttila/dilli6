@@ -3,9 +3,12 @@ import 'isotope-layout/js/layout-modes/fit-rows';
 import imagesLoaded from 'imagesloaded';
 import Animations from './smsetup';
 import Gallery from './gallery';
+import IsMobile from './ismobile';
 class Projects {
 
     constructor() {
+        this.isMobile = new IsMobile();
+        this.activateMobileFlags();
         this.projectsGridEl = $('#drinksGrid');
         this.galleriesKeys = ['dilli6', 'RA-calendar', 'spars', 'RA-loginpage', 'RA-merchendise', 'kamenictvi', 'RA-dm', 'KE', 'PF', 'bwmagazine', 'photoshoots', 'ra-manage', 'ftc' ];
         this.projectsGrid;
@@ -17,12 +20,23 @@ class Projects {
         this.gallery= new Gallery();
     }
 
+    activateMobileFlags() {
+        let isIOSdevice = this.isMobile.iOS();
+        let isMobileDevice = this.isMobile.any();
+        if (isIOSdevice) {
+            $('body').addClass('device-ios');
+        }
+        if (isMobileDevice) {
+            $('body').addClass('device-mobile');
+        }
+    }
     initProjectsGrid() {
         let brokenCount = 0;
         let self = this;
         var imgLoaded = imagesLoaded('body', { background: true }, function () {
             console.log('all images have loaded...');
         });
+        
         imgLoaded.on( 'always', function( instance ) {
             setTimeout(()=>{
                 self.projectsGrid = new Isotope( self.projectsGridEl[0], {

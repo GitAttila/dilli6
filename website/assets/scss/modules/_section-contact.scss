@@ -3,8 +3,42 @@
 }
 .contact {
     &__map {
-        height: 50vh;
+        height: 60vh;
         background-color: $D6-lightgrey;
+        @include atSmall{
+            height: 50vw;
+        }
     }
-    
+    &__info {
+        &__wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 33vw;
+            min-width: 14rem;
+            max-width: 24rem;;
+            background-color: rgba(0,0,0,0.75);
+            margin: 4rem 0 2rem 2rem;
+            padding: 1rem;
+            @include atSmall{
+                width: 33vw;
+            }
+            @include atMedium {
+                width: 25vw;
+            }
+            @include atLarge {
+                padding: 2rem;
+            }
+            .section__title {
+                color: $color-white;
+            }
+            .section__text {
+                color: $color-white;
+                margin-bottom: 0;
+            }
+            .social-links__item-link {
+                color: $color-white;
+            }
+        }
+    }
 }

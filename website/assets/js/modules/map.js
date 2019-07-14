@@ -131,9 +131,9 @@ function initMap() {
     
     var icon = {
         url: "./assets/images/d6_pointer.png",
-        scaledSize: new google.maps.Size(140,164),
+        scaledSize: new google.maps.Size(100,117),
         origin: new google.maps.Point(0,0),
-        anchor: new google.maps.Point(70, 164)
+        anchor: new google.maps.Point(50, 117)
     };
 
     var marker = new google.maps.Marker({

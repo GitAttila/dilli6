@@ -7,17 +7,17 @@ class Carousels {
             [
                 {
                     selector: '#carousel-menu-stepper',
-                    interval: 7000,
+                    interval: 5000,
                     ride: true
                 },
                 {
                     selector: '#carousel-team',
-                    interval: 700000,
+                    interval: 10000,
                     ride: true
                 },
                 {
                     selector: '#carousel-meals-menu',
-                    interval: 3000000,
+                    interval: 10000,
                     ride: true
                 }
             ]

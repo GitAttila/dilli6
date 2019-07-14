@@ -43,6 +43,10 @@ var paths = {
         src: './website/assets/images/**/*.{png,jpg,jpeg,svg,gif,pdf}',
         dest: './dist/assets/images'
     },
+    videos: {
+        src: './website/assets/videos/**/*.{mp4,webm,ogv}',
+        dest: './dist/assets/videos'
+    },
     rootfiles: {
         src: './website/*.{txt,png,ico,webmanifest}',
         dest: './dist'
@@ -146,6 +150,15 @@ function images() {
         .pipe(gulp.dest(paths.images.dest));
 }
 
+function videos() {
+    return gulp.src(paths.videos.src)
+        .on('error', function(errorInfo) {
+            console.log(errorInfo.toString());
+            this.emit('end');
+        })
+        .pipe(gulp.dest(paths.videos.dest));
+}
+
 function styles() {
     return gulp.src(paths.styles.src)
         .on('error', function(errorInfo) {
@@ -202,12 +215,12 @@ var watch = gulp.series(serve, watch);
 
 var preview = gulp.series(previewDist);
 
-var build = gulp.series(clean, gulp.series(styles, scripts, rootfiles, fonts, galleryfonts, lightgalleryimgs, gulp.parallel(images, tempFiles, serializefiles)));
-
+var build = gulp.series(clean, gulp.series(styles, scripts, rootfiles, fonts, galleryfonts, lightgalleryimgs, gulp.parallel(images, videos, tempFiles, serializefiles)));
 
 exports.clean = clean;
 exports.styles = styles;
 exports.images = images;
+exports.videos = videos;
 exports.fonts = fonts;
 exports.rootfiles = rootfiles;
 exports.tempFiles = tempFiles;

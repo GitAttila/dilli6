@@ -13,5 +13,15 @@
             }
         }
     }
-
+    #carousel-team {
+        .site-carousel {
+            &__prev, &__next {
+                color: $D6-mediumgrey;
+                width: 10%;
+                &:hover, &:focus {
+                    color: $D6-mediumgrey;
+                }
+            }
+        }
+    }
 }

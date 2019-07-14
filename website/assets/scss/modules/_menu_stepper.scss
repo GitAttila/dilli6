@@ -90,10 +90,19 @@
     }
     &__carousel__item {
         img {
-            height: 50vw;
-            width: auto;
+            width: 100%;
+            height: auto;
             margin: 0 auto;
             display: block;
+            @include atSmall {
+                width: 80%;
+            }
+            @include atMedium {
+                width: 70%;
+            }
+            @include atLarge {
+                width: 60%;
+            }
         }
     }
 }
