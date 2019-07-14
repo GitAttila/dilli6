@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 0.3s background ease-in-out;
+        transition: 0.3s opacity ease-in-out;
     }
     &__icon {
         color: $color-white;
@@ -75,7 +75,7 @@
                 transform: scale(1.2);
             }
             .gallery__overlay {
-                background: none;
+                opacity: 0!important;
             }
             .gallery__icon__wrapper {
                 opacity: 0.33;

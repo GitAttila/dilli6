@@ -81,10 +81,9 @@
     }
     &__video {
         position: relative;
-        height: calc(100vh - 2rem);
-        width: calc(100% - 2rem);
+        height: calc(100vh);
+        width: calc(100%);
         overflow: hidden;
-        margin: 1rem;
     }
     &__video-wrapper {
         position: absolute;
