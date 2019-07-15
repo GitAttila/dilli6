@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = {
     entry: {
         Vendor: "./website/assets/js/vendor.js",
-        App: ["@babel/polyfill/dist/polyfill.js", "./website/assets/js/app.js"]
+        App: ["./website/assets/js/app.js"]
     },
     mode: 'none',
     output: {
@@ -14,13 +14,13 @@ module.exports = {
     },
     module: {
         rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env'],
                 plugins: ["@babel/plugin-transform-runtime"]
-            },
-            test: /\.js$/,
-            exclude: /node_modules/
+            }
         }]
     },
     resolve: {
