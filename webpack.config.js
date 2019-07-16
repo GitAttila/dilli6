@@ -3,14 +3,11 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    entry: {
-        Vendor: "./website/assets/js/vendor.js",
-        App: ["./website/assets/js/app.js"]
-    },
-    mode: 'none',
+    entry: "./website/assets/js/app.js",
+    mode: 'production',
     output: {
-        path: __dirname + "/website/temp/js",
-        filename: "[name].js"
+        filename: "App.js",
+        path: __dirname + "/website/temp/js"
     },
     module: {
         rules: [{
@@ -18,8 +15,11 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
-                presets: ['@babel/preset-env'],
-                plugins: ["@babel/plugin-transform-runtime"]
+                presets: ["@babel/preset-env"],
+                plugins: [
+                    "@babel/plugin-transform-template-literals",
+                    "@babel/plugin-transform-runtime"
+                ]
             }
         }]
     },

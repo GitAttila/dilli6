@@ -1,6 +1,6 @@
 const presets = [
     [
-        "@babel/env",
+        "@babel/preset-env",
         {
             targets: {
                 edge: "17",
@@ -10,8 +10,14 @@ const presets = [
                 ie: "11"
             },
             useBuiltIns: "usage",
-        },
+        }
     ],
 ];
 
-module.exports = { presets };
+const plugins = [ 
+    [
+        "@babel/plugin-transform-template-literals"
+    ] 
+];
+
+module.exports = { presets, plugins };

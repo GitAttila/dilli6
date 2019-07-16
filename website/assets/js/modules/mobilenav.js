@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-import 'bootstrap/js/src/collapse';
+import 'bootstrap/js/dist/collapse';
 class MobileMenu {
     
     constructor() {
