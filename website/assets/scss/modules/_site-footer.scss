@@ -90,4 +90,11 @@
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
+    .social-links {
+        &__item-link {
+            &:hover, &:focus {
+                color: $D6-lightblue!important;
+            }
+        }
+    }
 }
