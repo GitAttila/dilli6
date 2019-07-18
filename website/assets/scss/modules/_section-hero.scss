@@ -27,13 +27,11 @@
     &__logocontainer {
         margin: 0 auto;
         max-width: 50%;
+        height: 100%;
         margin-bottom: 1rem;
         img {
             width: 100%;
         }
-        // @include atSmall {
-        //     margin-bottom: 0;
-        // }
     }
     &__logo {
         width: 100%;

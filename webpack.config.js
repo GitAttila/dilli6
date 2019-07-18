@@ -1,10 +1,11 @@
 
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: "./website/assets/js/app.js",
-    mode: 'production',
+    mode: 'development',
     output: {
         filename: "App.js",
         path: __dirname + "/website/temp/js"
@@ -32,6 +33,11 @@ module.exports = {
             "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
             "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
         },
+    },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin()
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({

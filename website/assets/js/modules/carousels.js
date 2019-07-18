@@ -1,5 +1,4 @@
 import "bootstrap/js/dist/carousel";
-
 class Carousels {
 
     constructor () {

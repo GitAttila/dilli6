@@ -17,7 +17,7 @@ $.fn.extend({
             }
         })(document.createElement('div'));
 
-        setTimeout(function() {
+        return setTimeout(function() {
             self.addClass('animated ' + animationName).one(animationEnd, function() {
                 $(this).removeClass('animated ' + animationName);
                 if (typeof callback === 'function') {
@@ -25,7 +25,6 @@ $.fn.extend({
                 }
             });
         }, delay);
-        return self;
     }
 });
 
