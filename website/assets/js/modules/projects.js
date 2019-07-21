@@ -1,5 +1,4 @@
 import Isotope from 'isotope-layout';
-import 'isotope-layout/js/layout-modes/fit-rows';
 import imagesLoaded from 'imagesloaded';
 import Animations from './smsetup';
 import Gallery from './gallery';

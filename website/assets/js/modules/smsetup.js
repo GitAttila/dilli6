@@ -2,7 +2,7 @@ import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 import TweenMax from 'gsap/src/uncompressed/TweenMax';
-import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin';
+// import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin';
 
 class Animations {
     constructor() {

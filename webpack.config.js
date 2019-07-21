@@ -2,21 +2,25 @@
 const webpack = require('webpack');
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: "./website/assets/js/app.js",
     mode: 'development',
     output: {
         filename: "App.js",
+        chunkFilename: "shared.js",
         path: __dirname + "/website/temp/js"
     },
     module: {
         rules: [{
             test: /\.js$/,
-            exclude: /node_modules/,
+            exclude: /node_modules/, 
             loader: 'babel-loader',
             options: {
-                presets: ["@babel/preset-env"],
+                presets: [
+                    "@babel/preset-env"
+                ],
                 plugins: [
                     "@babel/plugin-transform-runtime"
                 ]
@@ -35,11 +39,15 @@ module.exports = {
         },
     },
     optimization: {
+        splitChunks: {
+            chunks: 'all'
+        },
         minimizer: [
             new UglifyJsPlugin()
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
