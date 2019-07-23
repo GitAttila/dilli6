@@ -1,6 +1,5 @@
 import "bootstrap/js/dist/carousel";
 class Carousels {
-
     constructor () {
         this.carousels = 
             [
@@ -22,6 +21,7 @@ class Carousels {
             ]
         this.initCarousels(this.carousels);
         this.events();
+        global.events = this.events;
     }
 
     initCarousels(carousels) { 

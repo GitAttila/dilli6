@@ -51,7 +51,7 @@ class Animations {
 
         let paralDur = $('.section-hero').innerHeight();
         const heroParallax = new ScrollMagic.Scene({
-            triggerElement: ".section-profile",
+            triggerElement: ".section-about",
             triggerHook: "0.95",
             duration: paralDur
             })
@@ -91,12 +91,6 @@ class Animations {
             },250);
         });
 
-        // Attila Hazay signature animation
-        $('#AH-signature-paths path').each(function(key,val){
-            // console.log(key,val);
-            pathPrepare ($(val));
-        });
-
         function resetSceneDurations(){
             $(Object.keys(_self.siteScene)).each(function(key,val){
                 let value = val.trim().toLowerCase();
@@ -110,6 +104,5 @@ class Animations {
 
     }
 }
-
 
 export default Animations;

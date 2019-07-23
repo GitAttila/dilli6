@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: "./website/assets/js/app.js",
-    mode: 'development',
+    mode: 'production',
     output: {
         filename: "App.js",
         chunkFilename: "shared.js",

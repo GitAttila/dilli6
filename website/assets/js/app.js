@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 import './modules/animatecss';
-import './modules/map'
+import initMap from './modules/map';
+window.initMap = initMap;
 import Carousels from './modules/carousels';
 import MobileNavigation from './modules/mobilenav';
 import './modules/smsetup';
