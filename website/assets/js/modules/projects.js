@@ -1,3 +1,4 @@
+import animFunc from './animatecss';
 import Isotope from 'isotope-layout';
 import imagesLoaded from 'imagesloaded';
 import Animations from './smsetup';
@@ -6,6 +7,7 @@ import IsMobile from './ismobile';
 class Projects {
 
     constructor() {
+        this.initAnim();
         this.isMobile = new IsMobile();
         this.activateMobileFlags();
         this.projectsGridEl = $('#drinksGrid');
@@ -17,6 +19,12 @@ class Projects {
         };
         this.anims = new Animations();
         this.gallery= new Gallery();
+    }
+
+    initAnim() {
+        $.fn.extend({
+            animateCss: animFunc
+        });
     }
 
     activateMobileFlags() {
@@ -82,7 +90,7 @@ class Projects {
             if ((lastNavMenuClicked === filterValue) || isFilterItemDisabled) {
                 return;
             }
-            console.log(filterValue, lastNavMenuClicked);
+            // console.log(filterValue, lastNavMenuClicked);
             lastNavMenuClicked = filterValue;
 
             $("#menu-filter .filter__item").removeClass("btn-site--active");

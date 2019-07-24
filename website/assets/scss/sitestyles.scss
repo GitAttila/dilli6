@@ -1,5 +1,4 @@
 /*  vendors scss styles  */
-
 @import url('https://fonts.googleapis.com/css?family=Anton|Lato|Six+Caps&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
@@ -13,8 +12,9 @@
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../../node_modules/animatewithsassclass/animate.scss";
 @import "../../../node_modules/lightgallery/src/sass/lightgallery.scss";
-/*  site specific scss styles  */
 
+
+/*  site specific scss styles  */
 @import "base/variables";
 @import "base/mixins";
 @import "base/global";
