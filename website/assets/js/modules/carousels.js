@@ -15,7 +15,7 @@ class Carousels {
                 },
                 {
                     selector: '#carousel-meals-menu',
-                    interval: 10000,
+                    interval: 100000000,
                     ride: true
                 }
             ]

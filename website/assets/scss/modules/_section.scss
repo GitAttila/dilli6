@@ -7,32 +7,35 @@
         font-weight: normal;
         font-size: 3rem;
         line-height: 3rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         color: $D6-lightblue;
         @include atMedium {
             font-size: 4rem;
             line-height: 4rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         @include atLarge {
             font-size: 5rem;
             line-height: 5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     }
     &__subtitle {
         font-family: $headline-font;
         font-weight: normal;
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
         color: $D6-yellow;
         @include atMedium {
             font-size: 2.6rem;
-            margin-bottom: 0.5rem;
+            line-height: 2.8rem;
+            margin-bottom: 1rem;
         }
         @include atLarge {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            line-height: 3.4rem;
+            margin-bottom: 2rem;
         }
     }
     &__text{

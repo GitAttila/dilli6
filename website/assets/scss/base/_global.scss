@@ -36,7 +36,7 @@ input {
 
 .gradient {
     &--lightgreendarkgreen {
-        background: linear-gradient(to right, $D6-lightgreen, $D6-darkgreen);
+        background: linear-gradient(right, $D6-lightgreen, $D6-darkgreen);
     }
     &--yellowdarkgreenlightgreen {
         background: linear-gradient(
@@ -76,8 +76,8 @@ $class-slug:layer__opacity !default;
     &--lightgreendarkgreen {
         color: $D6-lightgreen;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to bottom, $D6-lightgreen, $D6-darkgreen);
-        background: -webkit-o-gradient(to bottom, $D6-lightgreen, $D6-darkgreen);
+        background: -webkit-linear-gradient(bottom, $D6-lightgreen, $D6-darkgreen);
+        background: -webkit-o-gradient(bottom, $D6-lightgreen, $D6-darkgreen);
         background-clip: text;
         -webkit-background-clip: text;
         
@@ -85,8 +85,8 @@ $class-slug:layer__opacity !default;
     &--lightbluelightgreen {
         color: $D6-lightblue;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
-        background: -webkit-o-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
+        background: -webkit-linear-gradient(bottom, $D6-lightblue, $D6-lightgreen);
+        background: -webkit-o-gradient(bottom, $D6-lightblue, $D6-lightgreen);
         background-clip: text;
         -webkit-background-clip: text;
         
@@ -94,8 +94,8 @@ $class-slug:layer__opacity !default;
     &--whiteyellow {
         color: $color-white;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to bottom, $color-white, $D6-yellow);
-        background: -webkit-o-gradient(to bottom, $color-white, $D6-yellow);
+        background: -webkit-linear-gradient(bottom, $color-white, $D6-yellow);
+        background: -webkit-o-gradient(bottom, $color-white, $D6-yellow);
         background-clip: text;
         -webkit-background-clip: text;
         
@@ -104,13 +104,13 @@ $class-slug:layer__opacity !default;
         color: $D6-lightgreen;
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(
-            to bottom,
+            bottom,
             $D6-yellow,
             $D6-lightgreen,
             $D6-darkgreen
         );
         background: -webkit-o-gradient(
-            to bottom,
+            bottom,
             $D6-yellow,
             $D6-lightgreen,
             $D6-darkgreen
@@ -119,20 +119,11 @@ $class-slug:layer__opacity !default;
         -webkit-background-clip: text;
     
     }
-    &--lightbluelightgreen {
-        color: $D6-lightblue;
-        -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
-        background: -webkit-o-gradient(to bottom, $D6-lightblue, $D6-lightgreen);
-        background-clip: text;
-        -webkit-background-clip: text;
-        
-    }
     &--mediumgreydarkgrey {
         color: $D6-mediumgrey;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to bottom, $D6-mediumgrey, $D6-darkgrey);
-        background: -webkit-o-gradient(to bottom, $D6-mediumgrey, $D6-darkgrey);
+        background: -webkit-linear-gradient(bottom, $D6-mediumgrey, $D6-darkgrey);
+        background: -webkit-o-gradient(bottom, $D6-mediumgrey, $D6-darkgrey);
         background-clip: text;
         -webkit-background-clip: text;
         

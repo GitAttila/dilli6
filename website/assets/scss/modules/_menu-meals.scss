@@ -12,6 +12,7 @@
         &__item {
             color: $color-white;
             padding: 0 0.5rem;
+            margin-bottom: 1rem;
             cursor: default;
             &:hover {
                 background-color: rgba(0,0,0,0.25);
@@ -21,11 +22,44 @@
             }
         }
     }
+    &__title {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        @include atLarge {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+    }
+    &__description {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        @include atLarge {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+    &__price {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        text-align: right;
+        @include atLarge {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+    }
+    &__icon {
+        margin-right: 0.5rem;
+        img {
+            width: 1.4rem;
+            height: 100%;;
+            margin: 0;
+            display: inline-block;
+        }
+    }
     &__carousel-caption {
         position: initial;
         position: unset;
         padding: 1rem 0;
-        max-width: 70%;
         margin: 0 auto;
         text-align: left;
         h2 {
@@ -59,21 +93,6 @@
             text-align: center;
             line-height: 1.6rem;
             border-radius: 50%;
-        }
-    }
-    &__description {
-        font-size: 1.2rem;
-    }
-    &__price {
-        text-align: right;
-    }
-    &__icon {
-        margin-right: 0.5rem;
-        img {
-            width: 2rem;
-            height: 100%;;
-            margin: 0;
-            display: inline-block;
         }
     }
     &__bg {
