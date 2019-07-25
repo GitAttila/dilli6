@@ -1,4 +1,4 @@
-.section-contact {
+.section-map {
     padding: 0;
 }
 .contact {
@@ -17,24 +17,6 @@
     }
     &__info {
         &__wrapper {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 33vw;
-            min-width: 14rem;
-            max-width: 24rem;;
-            background-color: rgba(0,0,0,0.75);
-            margin: 4rem 0 2rem 2rem;
-            padding: 1rem;
-            @include atSmall{
-                width: 33vw;
-            }
-            @include atMedium {
-                width: 25vw;
-            }
-            @include atLarge {
-                padding: 2rem;
-            }
             .section__title {
                 color: $color-white;
             }
@@ -44,6 +26,32 @@
             }
             .social-links__item-link {
                 color: $color-white;
+            }
+            &--map {
+                background-color: rgba(0,0,0,0.75);
+                padding: 1rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 33vw;
+                min-width: 14rem;
+                max-width: 24rem;
+                margin: 4rem 0 2rem 2rem;
+                @include atSmall{
+                    width: 33vw;
+                }
+                @include atMedium {
+                    width: 25vw;
+                }
+                @include atLarge {
+                    padding: 2rem;
+                }
+            }
+            &--address {
+                text-align: center;
+                width: 67%;
+                margin: 0 auto;
+                margin-top: 1rem;
             }
         }
     }

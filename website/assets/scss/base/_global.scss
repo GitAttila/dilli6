@@ -8,7 +8,7 @@ body {
     color: $primary-text-color;
     background-color: $color-white;
     font-family: $text-font;
-    font-weight: 100;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
     font-size: 1rem;
@@ -61,6 +61,9 @@ input {
     }
     &--mediumgreydarkgrey {
         background: linear-gradient(-55deg, $D6-mediumgrey, $D6-darkgrey);
+    }
+    &--lightgreymediumgrey {
+        background: linear-gradient(-55deg, $D6-lightgrey, $D6-mediumgrey);
     }
 }
 

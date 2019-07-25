@@ -2,4 +2,10 @@
     .parallax__container {
         background-attachment: scroll;
     }
+    .site-footer {
+        &__overlay {
+            background-attachment: scroll;
+            background-size: 14rem 14rem;
+        }
+    }
 }

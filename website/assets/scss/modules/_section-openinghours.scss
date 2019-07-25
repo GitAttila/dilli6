@@ -1,0 +1,32 @@
+.section-openinghours {
+    color: $color-white;
+    .section__title {
+        color: $color-white;
+    }
+    .oh-table {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        &__row {
+            &--active {
+                background-color: rgba(255,255,255,0.33);
+                color: $color-white
+            }
+        }
+        &__day {
+            padding: 0 0.5rem;
+            text-align: left;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+        &__hours {
+            padding: 0 0.5rem;
+            text-align: right;
+            border-bottom-right-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+    }
+    .section__text {
+        color: $color-white
+    }
+}
