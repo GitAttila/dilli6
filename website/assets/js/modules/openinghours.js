@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+import Holidays from './holidays';
 class OpeningHours {
     
     constructor() {
@@ -20,6 +21,7 @@ class OpeningHours {
         this.curCountdownHrs = 0;
         this.curCountdownMins = 0;
         this.initOH();
+        this.publicHolidays = new Holidays();
     }
     
     initOH() {

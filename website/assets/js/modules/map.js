@@ -142,6 +142,21 @@ function initMap() {
         title: 'Dilli6 indian bistro & bar',
         icon: icon
     });
+
+    var request = {
+        placeId: 'ChIJOyz66SDrC0cRl0llofETOAY',
+        fields: ['name', 'reviews', 'place_id', 'opening_hours', 'rating', 'user_ratings_total']
+    };
+
+    var service = new google.maps.places.PlacesService(map);
+
+    service.getDetails(request, function(place, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            // console.log(place);
+
+        }
+    });
+
 }
 
 export default initMap;
