@@ -1,9 +1,4 @@
 .menu-meals {
-    &__carousel {
-        .carousel-inner {
-            height: 50rem;
-        }
-    }
     &__carousel-menu {
         font-size: 1.8rem;
         max-width: 80%;
@@ -24,8 +19,10 @@
             }
             @include atMedium {
                 padding: 0.5rem;
-                margin-bottom: 1rem;
             }
+        }
+        &--invisible {
+            visibility: hidden;
         }
     }
     &__title {

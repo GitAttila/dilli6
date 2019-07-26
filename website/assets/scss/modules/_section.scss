@@ -79,10 +79,10 @@
 }
 
 .section-about{
-    background-color: rgba(240,238,236,1);
+    background-color: $color-dirtywhite;
 }
 .section-gallery{
-    
+    background-color: $color-dirtywhite;
 }
 .section-parallax {
     padding: 0;
@@ -92,19 +92,22 @@
     }
 }
 .section-menu-concept {
-    background-color: rgba(240,238,236,1);
+    background-color: $color-dirtywhite;
 }
 .section-menu-meals {
-    background-color: rgba(240,238,236,1);
+    background-color: $color-dirtywhite;
 }
 .section-menu-drinks {
-    background-color: rgba(240,238,236,1);
+    background-color: $color-dirtywhite;
 }
 .section-gallery {
     background-color: $primary-background-color;
 }
 .section-contact {
     background-color: $D6-mediumgrey;
+}
+.section-openinghours{
+    background-color: $color-dirtywhite;
 }
 .section-suppliers {
     background-color: transparent;

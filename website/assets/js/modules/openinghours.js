@@ -23,7 +23,6 @@ class OpeningHours {
     }
     
     initOH() {
-        let msg = "";
         let oh = [
             {
                 openingHr: 11,  //Sunday
@@ -68,11 +67,15 @@ class OpeningHours {
                 closingMin: 0
             }
         ];
+        this.updateToday();
+        this.initOhMsg(oh);
+    }
+
+    updateToday() {
         let numOfDay = this.getNowDate().getDay();
         let indexOfDay = 0 ? numOfDay = 6 : numOfDay = numOfDay -1;
         $('#main-opening-hours .oh-table__row').removeClass('oh-table__row--active');
         $($('#main-opening-hours .oh-table__row').eq(indexOfDay)).addClass('oh-table__row--active');
-        this.initOhMsg(oh);
     }
 
     updateTimeMsg(msg,hrs,mins){
@@ -158,6 +161,7 @@ class OpeningHours {
                     now = _self.getNowDate();
                     msg = _self.compileMsg(ohData[now.getDay()], now, 'closing');
                     _self.updateTimeMsg(msg.msg,msg.hours, msg.minutes);
+                    _self.updateToday();
                 });
             } else {
                 _self.updateTimeMsg(msg);
@@ -170,6 +174,7 @@ class OpeningHours {
                     now = _self.getNowDate();
                     msg = _self.compileMsg(ohData[now.getDay()], now, 'opening');
                     _self.updateTimeMsg(msg.msg,msg.hours, msg.minutes);
+                    _self.updateToday();
                 });
             } else {
                 _self.updateTimeMsg(msg);
