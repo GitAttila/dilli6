@@ -1,5 +1,6 @@
 .section {
     padding: 2rem 0;
+    padding-top: 3.5rem;
     position: relative;
     background-color: $primary-background-color;
     &__title {
@@ -70,11 +71,16 @@
     &__quote {
         font-size: 2rem;
     }
+    @include atSmall {
+        padding-top: 4.5rem;
+    }
     @include atMedium {
         padding: 3rem 0;
+        padding-top: 4.5rem;
     }
     @include atLarge {
         padding: 4rem 0;
+        padding-top: 4.5rem;
     }
 }
 
