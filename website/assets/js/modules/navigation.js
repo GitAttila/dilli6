@@ -27,10 +27,11 @@ class Navigation {
         $('#menuContent').on('click','a[data-sectionlink]', function(e) {
             e.preventDefault();
             let sectionElem = $(this).data('sectionlink').trim();
+            let posElem = $(sectionElem).offset().top;
+            sectionElem === '#section-hero' ? posElem = 0 : posElem = posElem;
+            console.log(sectionElem, posElem, $(sectionElem));
             if (sectionElem !== '') {
                 if ($(sectionElem).length>0) {
-                    let posElem = $(sectionElem).offset().top;
-                    // console.log(sectionElem, posElem);
                     _self.scrollTo('html,body', posElem, () => {
                         // collapse the nav menu after a menu item has been clicked
                         if ($("#menuContent").hasClass('show')) {
