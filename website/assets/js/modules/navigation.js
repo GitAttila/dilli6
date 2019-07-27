@@ -29,7 +29,6 @@ class Navigation {
             let sectionElem = $(this).data('sectionlink').trim();
             let posElem = $(sectionElem).offset().top;
             sectionElem === '#section-hero' ? posElem = 0 : posElem = posElem;
-            console.log(sectionElem, posElem, $(sectionElem));
             if (sectionElem !== '') {
                 if ($(sectionElem).length>0) {
                     _self.scrollTo('html,body', posElem, () => {
