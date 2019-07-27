@@ -56,14 +56,22 @@
     }
     &__author {
         background-color: $D6-mediumgrey;
-        color: rgba(255,255,255,0.5);
         padding: 1rem 0;
         &--wrapper {
+            text-decoration: none;
+            color: rgba(255,255,255,0.5);
             display: flex;
             justify-content: center;
             align-items: center;
-            display: block;
             text-align: center;
+            transition: 0.1s color ease-in-out;
+            &:hover, &:focus {
+                color: $color-white;
+                text-decoration: none;
+                img {
+                    opacity: 1;
+                }
+            }
         }
         &--img {
             margin-right: 1rem;
@@ -71,6 +79,7 @@
                 opacity: 0.5;
                 max-height: 2rem;
                 width: auto;;
+                transition: 0.1s opacity ease-in-out;
             }
         }
     }

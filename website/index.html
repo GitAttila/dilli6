@@ -49,6 +49,15 @@
       <!-- <section class="section section-ie">
             <h3 class="browsehappy">You are using <strong>Internet Explorer</strong> browser. Please <a href="https://www.google.com/chrome/" target="_blank">download</a> or use Google Chrome to view this site.</h3>
       </section> -->
+      <div id="jump-up" class="btn-site btn-site--icon btn-site--nav-icon btn-site--rounded">
+            <span class="btn-site__label"><i class="fas fa-chevron-up"></i></span>
+      </div>
+
+      <!-- <div id="allergenes-icon">
+            <div class="btn-site btn-site--icon btn-site--nav-icon btn-site--rounded" data-toggle="modal" data-target="#allergenes-list">
+                  <i class="fas fa-allergies"></i>
+            </div>
+      </div> -->
 
       <section class="section section-loading">
             <div id="loading-spinner" class="site-spinner__wrapper">
@@ -63,7 +72,7 @@
             </div>
       </section>
 
-      <header id="site-header" class="site-header shadow-depth3">
+      <header class="site-header shadow-depth3">
             <div class="container">
 
                   <a class="site-header__caption " href="#">
@@ -90,24 +99,24 @@
                   <div class="container">
                         <ul class="primary-nav__items-wrapper">
                               <li class="primary-nav__item">
-                                    <a data-filter="hero" class="primary-nav__link">
+                                    <a data-sectionlink="#section-hero" class="primary-nav__link">
                                           <i class="fas fa-home"></i>
                                     </a>
                               </li>
                               <li class="primary-nav__item">
-                                    <a data-filter="about" class="primary-nav__link">about</a>
+                                    <a data-sectionlink="#section-about" class="primary-nav__link">about</a>
                               </li>
                               <li class="primary-nav__item">
-                                    <a data-filter="menu-concept" class="primary-nav__link">menu concept</a>
+                                    <a data-sectionlink="#section-menu-concept" class="primary-nav__link">menu concept</a>
                               </li>
                               <li class="primary-nav__item">
-                                    <a data-filter="menu-meals" class="primary-nav__link">meals menu</a>
+                                    <a data-sectionlink="#section-menu-meals" class="primary-nav__link">meals menu</a>
                               </li>
                               <li class="primary-nav__item">
-                                    <a data-filter="menu-drinks" class="primary-nav__link">drinks menu</a>
+                                    <a data-sectionlink="#section-menu-drinks" class="primary-nav__link">drinks menu</a>
                               </li>
                               <li class="primary-nav__item">
-                                    <a data-filter="contact" class="primary-nav__link">contact</a>
+                                    <a data-sectionlink="#section-contact" class="primary-nav__link">contact</a>
                               </li>
                         </ul>
                   </div>
@@ -115,7 +124,7 @@
             
       </header>
 
-      <section class="section-hero section-hero__video">
+      <section id="section-hero" class="section-hero section-hero__video">
 
             <div class="section-hero__video-wrapper">
                   <video class="section-hero__video-bg filter--desaturate" poster="./assets/images/streetfood.jpg" autoplay muted loop>
@@ -137,185 +146,190 @@
             </div>
             <div class="section-hero__overlay gradient--yellowdarkgreenlightgreen layer__opacity-60 blend--overlay"></div>
             <div class="section-hero__overlay gradient--mediumgreydarkgrey layer__opacity-60 blend--multiply"></div>
-            <div class="btn__jump-down">
+            
+            <div id="jump-down" class="btn__jump-down">
                   <div class="btn__jump-down--icon-wrapper animation__jump-down">
                         <i class="fas fa-chevron-down"></i>
                   </div>
+            
             </div>
-      </section>
+      </section> <!-- end of section hero -->
 
-      <section class="section section-about">
-            <div class="container">
-                  <h2 class = "section__title text-gradient--lightbluelightgreen section__text-center">ABOUT US</h2>
-                  <h4 class = "section__subtitle section__text-center">From Dilli with love...</h4>
-                  <div class="social-links text-center">
-                        <a href="https://www.facebook.com/D6-Indick%C3%A9-bistro-a-bar-292846821382072/" class ="social-links__item-link" target = "_blank">
-                              <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/d6_bistro/?hl=en" class ="social-links__item-link" target = "_blank">
-                              <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.tripadvisor.com/Restaurant_Review-g274707-d16830280-Reviews-DILLI_6_Indian_Bistro_Bar-Prague_Bohemia.html" class ="social-links__item-link" target = "_blank">
-                              <i class="fab fa-tripadvisor"></i>
-                        </a>
-                  </div>
-                  <p class="section__text section__text--lead section__text-center">We believe there is no greater love then the love for food. Food is an eternal part of our lives and it dominates much of our daily conversations.</p>
-                  <p class="section__text section__text-center">We at Dilli 6 Bistro and Bar are keen to provide true experience of Dilli 6, Our concept is inspired from the streets of Chandni chowk and Dilli 6 itself. 
-                              It all started here, Famous Butter chicken, Chaat , street food culture , the famous Dal Makhani and you name it.</p>
-                  <p class="section__text section__text-center">We are culinary Professionals, with over 8 years in the Industry and after exploring 3 continents and gathering great 
-                              exposure in the field we are here to embark our journey on a new milestone.</p>    
-                  <p class="section__text section__text-center">Delicious Food , Signature Cocktails and a Unique Concept.</p>   
-            </div>
-
-      </section>
-
-      <section class="section section-gallery">
-            <div class="gallery__wrapper" id="about-gallery">
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_01.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_01.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_02.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_02.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_03.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_03.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_04.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_04.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_05.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_05.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-                  <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_06.jpg">
-                        <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_06.jpg" alt="">
-                        <a class="gallery__icon__wrapper">
-                              <div class="gallery__icon">
-                                    <i class="far fa-images"></i>
-                              </div>
-                        </a>
-                        <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
-                  </div>
-            </div>
-
-      </section>
-
-      <section class="section section-people">
-            <div class="container">
-                  <h2 class = "section__title text-gradient--lightbluelightgreen section__text-center">WHO WE ARE</h2>
-                  <h4 class = "section__subtitle section__text-center">Meet our team</h4>
-
-                  <div id="carousel-team" class="carousel slide mt-5">
-
-                        <div class="carousel-inner site-carousel__inner">
-                              <div class="carousel-item site-carousel__item active">
-                                    <div class="section-people__person">
-                                          <div class="row align-items-center">
-                                                <div class="col-12 col-sm-12 col-md-4 mb-4">
-                                                      <div class="section-people__person__portrait">
-                                                            <img src="./assets/images/chef.png" class="mb-3" alt="DILLI6 Abhi chef">
-                                                      </div>
-                                                      <h3 class="feature__title text-center">Abhijeet</h3>
-                                                      <h4 class="feature__subtitle text-center">founder and chef</h4>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-8">
-                                                      <div class="feature">
-                                                            <p class="section__text section__text--lead section__text-center"><sup><i class="fas fa-quote-left section__quote"></i></sup>There is no greater love then the love of the food, and food dominates much of our daily conversations, for the years I have believed that the people who love food have been the best people to be with.</p>
-                                                            <p class="section__text section__text-center">Born and raised in small holy city of North India (Haridwar). Since school days, I always had a passion for food. 
-                                                                  After completing my schooling, I decided to join hotel school. I got graduated from IIHM Kolkata.</p>
-                                                            <p class="section__text section__text-center">Travelled abroad, cooked almost in all kinds of kitchen, from domestic stove to state of the art. 
-                                                                  Those huge Indian gatherings, street food, fast food, mouth watering kebabs. Cooking for food lovers, cooking for food critics, it has been extraordinary.
-                                                                  Been travelling, cooking and exploring for 8 years now, I feel great seeing people around me budding there love for food, and it has always been an immense pleasure cooking for them.</p>    
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="carousel-item site-carousel__item">
-                                    <div class="section-people__person">
-                                          <div class="row align-items-center">
-                                                <div class="col-12 col-sm-12 col-md-4 mb-4">
-                                                      <div class="section-people__person__portrait">
-                                                            <img src="./assets/images/chef2.png" class="mb-3" alt="DILLI6 Mahavir chef">
-                                                      </div>
-                                                      <h3 class="feature__title text-center">Mahavir</h3>
-                                                      <h4 class="feature__subtitle text-center">co-founder and chef</h4>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-8">
-                                                      <div class="feature">
-                                                            <p class="section__text section__text--lead section__text-center"><sup><i class="fas fa-quote-left section__quote"></i></sup>There is no greater love then the love of the food, and food dominates much of our daily conversations, for the years I have believed that the people who love food have been the best people to be with.</p>
-                                                            <p class="section__text section__text-center">Born and raised in small holy city of North India (Haridwar). Since school days, I always had a passion for food. 
-                                                                  After completing my schooling, I decided to join hotel school. I got graduated from IIHM Kolkata.</p>
-                                                            <p class="section__text section__text-center">Travelled abroad, cooked almost in all kinds of kitchen, from domestic stove to state of the art. 
-                                                                  Those huge Indian gatherings, street food, fast food, mouth watering kebabs. Cooking for food lovers, cooking for food critics, it has been extraordinary.
-                                                                  Been travelling, cooking and exploring for 8 years now, I feel great seeing people around me budding there love for food, and it has always been an immense pleasure cooking for them.</p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                        <a class="carousel-control-prev site-carousel__prev" href="#carousel-team" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true">
-                                    <i class="fas fa-chevron-left"></i>
-                              </span>
-                              <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next site-carousel__next" href="#carousel-team" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true">
-                                    <i class="fas fa-chevron-right"></i>
-                              </span>
-                              <span class="sr-only">Next</span>
-                        </a>
-                  </div>
-                  
-            </div>
-
-      </section>
-
-      <section class="section section-parallax">
-            <div class="parallax__content">
+      <div id="section-about">
+            <section class="section section-about">
                   <div class="container">
-                        <h2 class="parallax__title script-font">Delicious food</h2>
+                        <h2 class = "section__title text-gradient--lightbluelightgreen section__text-center">ABOUT US</h2>
+                        <h4 class = "section__subtitle section__text-center">From Dilli with love...</h4>
+                        <div class="social-links text-center">
+                              <a href="https://www.facebook.com/D6-Indick%C3%A9-bistro-a-bar-292846821382072/" class ="social-links__item-link" target = "_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                              </a>
+                              <a href="https://www.instagram.com/d6_bistro/?hl=en" class ="social-links__item-link" target = "_blank">
+                                    <i class="fab fa-instagram"></i>
+                              </a>
+                              <a href="https://www.tripadvisor.com/Restaurant_Review-g274707-d16830280-Reviews-DILLI_6_Indian_Bistro_Bar-Prague_Bohemia.html" class ="social-links__item-link" target = "_blank">
+                                    <i class="fab fa-tripadvisor"></i>
+                              </a>
+                        </div>
+                        <p class="section__text section__text--lead section__text-center">We believe there is no greater love then the love for food. Food is an eternal part of our lives and it dominates much of our daily conversations.</p>
+                        <p class="section__text section__text-center">We at Dilli 6 Bistro and Bar are keen to provide true experience of Dilli 6, Our concept is inspired from the streets of Chandni chowk and Dilli 6 itself. 
+                                    It all started here, Famous Butter chicken, Chaat , street food culture , the famous Dal Makhani and you name it.</p>
+                        <p class="section__text section__text-center">We are culinary Professionals, with over 8 years in the Industry and after exploring 3 continents and gathering great 
+                                    exposure in the field we are here to embark our journey on a new milestone.</p>    
+                        <p class="section__text section__text-center">Delicious Food , Signature Cocktails and a Unique Concept.</p>   
                   </div>
-            </div>
-            <div class="parallax__overlay parallax__overlay--gradient gradient--yellowdarkgreenlightgreen"></div>
-            <div class="parallax__container parallax__container--bw"></div>
-      </section>
 
-      <section class="section section-menu-concept">
+            </section> <!-- end of section about-about -->
+
+            <section class="section section-gallery">
+                  <div class="gallery__wrapper" id="about-gallery">
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_01.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_01.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_02.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_02.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_03.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_03.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_04.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_04.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_05.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_05.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+                        <div class="gallery__img-wrapper" data-src="./assets/images/gallery/d6_gallery_06.jpg">
+                              <img class = "gallery__img" src="./assets/images/gallery/d6_gallery_06.jpg" alt="">
+                              <a class="gallery__icon__wrapper">
+                                    <div class="gallery__icon">
+                                          <i class="far fa-images"></i>
+                                    </div>
+                              </a>
+                              <div class="gallery__overlay gradient--yellowdarkgreenlightgreen layer__opacity-70 blend--multiply"></div>
+                        </div>
+                  </div>
+
+            </section> <!-- end of section about-gallery -->
+
+            <section class="section section-people">
+                  <div class="container">
+                        <h2 class = "section__title text-gradient--lightbluelightgreen section__text-center">WHO WE ARE</h2>
+                        <h4 class = "section__subtitle section__text-center">Meet our team</h4>
+
+                        <div id="carousel-team" class="carousel slide mt-5">
+
+                              <div class="carousel-inner site-carousel__inner">
+                                    <div class="carousel-item site-carousel__item active">
+                                          <div class="section-people__person">
+                                                <div class="row align-items-center">
+                                                      <div class="col-12 col-sm-12 col-md-4 mb-4">
+                                                            <div class="section-people__person__portrait">
+                                                                  <img src="./assets/images/chef.png" class="mb-3" alt="DILLI6 Abhi chef">
+                                                            </div>
+                                                            <h3 class="feature__title text-center">Abhijeet</h3>
+                                                            <h4 class="feature__subtitle text-center">founder and chef</h4>
+                                                      </div>
+                                                      <div class="col-12 col-sm-12 col-md-8">
+                                                            <div class="feature">
+                                                                  <p class="section__text section__text--lead section__text-center"><sup><i class="fas fa-quote-left section__quote"></i></sup>There is no greater love then the love of the food, and food dominates much of our daily conversations, for the years I have believed that the people who love food have been the best people to be with.</p>
+                                                                  <p class="section__text section__text-center">Born and raised in small holy city of North India (Haridwar). Since school days, I always had a passion for food. 
+                                                                        After completing my schooling, I decided to join hotel school. I got graduated from IIHM Kolkata.</p>
+                                                                  <p class="section__text section__text-center">Travelled abroad, cooked almost in all kinds of kitchen, from domestic stove to state of the art. 
+                                                                        Those huge Indian gatherings, street food, fast food, mouth watering kebabs. Cooking for food lovers, cooking for food critics, it has been extraordinary.
+                                                                        Been travelling, cooking and exploring for 8 years now, I feel great seeing people around me budding there love for food, and it has always been an immense pleasure cooking for them.</p>    
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item site-carousel__item">
+                                          <div class="section-people__person">
+                                                <div class="row align-items-center">
+                                                      <div class="col-12 col-sm-12 col-md-4 mb-4">
+                                                            <div class="section-people__person__portrait">
+                                                                  <img src="./assets/images/chef2.png" class="mb-3" alt="DILLI6 Mahavir chef">
+                                                            </div>
+                                                            <h3 class="feature__title text-center">Mahavir</h3>
+                                                            <h4 class="feature__subtitle text-center">co-founder and chef</h4>
+                                                      </div>
+                                                      <div class="col-12 col-sm-12 col-md-8">
+                                                            <div class="feature">
+                                                                  <p class="section__text section__text--lead section__text-center"><sup><i class="fas fa-quote-left section__quote"></i></sup>There is no greater love then the love of the food, and food dominates much of our daily conversations, for the years I have believed that the people who love food have been the best people to be with.</p>
+                                                                  <p class="section__text section__text-center">Born and raised in small holy city of North India (Haridwar). Since school days, I always had a passion for food. 
+                                                                        After completing my schooling, I decided to join hotel school. I got graduated from IIHM Kolkata.</p>
+                                                                  <p class="section__text section__text-center">Travelled abroad, cooked almost in all kinds of kitchen, from domestic stove to state of the art. 
+                                                                        Those huge Indian gatherings, street food, fast food, mouth watering kebabs. Cooking for food lovers, cooking for food critics, it has been extraordinary.
+                                                                        Been travelling, cooking and exploring for 8 years now, I feel great seeing people around me budding there love for food, and it has always been an immense pleasure cooking for them.</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <a class="carousel-control-prev site-carousel__prev" href="#carousel-team" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                                          <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next site-carousel__next" href="#carousel-team" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true">
+                                          <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                    <span class="sr-only">Next</span>
+                              </a>
+                        </div>
+                        
+                  </div>
+
+            </section> <!-- end of section about-people -->
+
+            <section class="section section-parallax">
+                  <div class="parallax__content">
+                        <div class="container">
+                              <h2 class="parallax__title script-font">Delicious food</h2>
+                        </div>
+                  </div>
+                  <div class="parallax__overlay parallax__overlay--gradient gradient--yellowdarkgreenlightgreen"></div>
+                  <div class="parallax__container parallax__container--bw"></div>
+            </section>
+
+      </div>
+
+      <section id="section-menu-concept" class="section section-menu-concept">
             <div class="container">
                   <h2 class = "section__title text-gradient--lightbluelightgreen section__text-center">A UNIQUE DINING CONCEPT</h2>
                   <h4 class = "section__subtitle section__text-center">Build your own menu</h4>
@@ -374,7 +388,7 @@
             </div>
       </section>
 
-      <section class="section section-menu-meals gradient--yellowlightblue">
+      <section id="section-menu-meals" class="section section-menu-meals gradient--yellowlightblue">
             <div class="container">
                   <h2 class = "section__title text-gradient--whiteyellow section__text-center">MAIN MEALS MENU</h2>
                   <h4 class = "section__subtitle section__text-center">Build your own menu</h4>
@@ -927,1057 +941,1064 @@
             
             <div class="menu-meals__bg menu-meals__bg--bg-rounded-coutout layer__opacity-30 blend--overlay"></div>
 
-      </section>
+      </section> 
             
-      <section class="section section-menu-drinks">
-            <div class="container">
-                  <h2 class = "section__title text-gradient--lightbluelightgreen">DRINKS & TAPAS</h2>
-                  <div class="filter__wrapper" id="menu-filter">
-                        <div data-filter="all" class="filter__item btn-site btn-site--active btn-site--rounded">
-                              <span class="btn-site__label">all</span>
-                        </div>
-                        <div data-filter="alcoholic drinks"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">alcoholic drinks</span>
-                        </div>
-                        <div data-filter="non-alcoholic drinks"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">non-alcoholic drinks</span>
-                        </div>
-                        <div data-filter="hot drinks"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">hot drinks</span>
-                        </div>
-                        <div data-filter="beer"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">beer</span>
-                        </div>
-                        <div data-filter="wine"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">wine</span>
-                        </div>
-                        <div data-filter="tapas"  class="filter__item btn-site btn-site--rounded">
-                              <span class="btn-site__label">tapas</span>
-                        </div>
-                  </div>
-                  <!-- isotope grid  START -->
-                  <div class="grid-layout" id="drinksGrid">
-                        <div class="grid-layout--sizer"></div>
-                        
-                        <div data-category="all, non-alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">SOFT DRINKS</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Filtered water
-                                                      <span class="project-card__item__vol"><sup>0.25l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">16<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Filtered water
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">26<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Bonaqua sparkling
-                                                      <span class="project-card__item__vol"><sup>0.25l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Roemerquelle still / sparkling
-                                                      <span class="project-card__item__vol"><sup>0.75l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">86<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Homemade lemonade
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Homemade lemonade seasonal
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">56<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Homemade iced tea hibiscus 
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">56<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Homemade iced tea with mint and lemon 
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">56<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lassi patiala seasonal
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">76<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lassi patiala
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Coca-Cola can
-                                                      <span class="project-card__item__vol"><sup>0.25l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Coca-Cola Zero can
-                                                      <span class="project-card__item__vol"><sup>0.25l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Fever-tree tonic water
-                                                      <span class="project-card__item__vol"><sup>0.2l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Ginger beer
-                                                      <span class="project-card__item__vol"><sup>0.2l</sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Fruit juice réva Rakvice
-                                                      <span class="project-card__item__vol"><sup></sup></span>
-                                                </div>
-                                          </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">26<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+      <div id="section-menu-drinks">
+
+            <section class="section section-menu-drinks">
+                  <div class="container">
+                        <h2 class = "section__title text-gradient--lightbluelightgreen">DRINKS & TAPAS</h2>
+                        <div class="filter__wrapper" id="menu-filter">
+                              <div data-filter="all" class="filter__item btn-site btn-site--active btn-site--rounded">
+                                    <span class="btn-site__label">all</span>
+                              </div>
+                              <div data-filter="alcoholic drinks"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">alcoholic drinks</span>
+                              </div>
+                              <div data-filter="non-alcoholic drinks"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">non-alcoholic drinks</span>
+                              </div>
+                              <div data-filter="hot drinks"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">hot drinks</span>
+                              </div>
+                              <div data-filter="beer"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">beer</span>
+                              </div>
+                              <div data-filter="wine"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">wine</span>
+                              </div>
+                              <div data-filter="tapas"  class="filter__item btn-site btn-site--rounded">
+                                    <span class="btn-site__label">tapas</span>
                               </div>
                         </div>
-
-                        <div data-category="all, alcoholic drinks, beer" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">BEER BOTTLED & NON-ALCOHOLIC</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      King Fisher
-                                                      <span class="project-card__item__vol"><sup>0.33l</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                        <!-- isotope grid  START -->
+                        <div class="grid-layout" id="drinksGrid">
+                              <div class="grid-layout--sizer"></div>
+                              
+                              <div data-category="all, non-alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">SOFT DRINKS</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Filtered water
+                                                            <span class="project-card__item__vol"><sup>0.25l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">16<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">96<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lobkowitz premium non-alcoholic
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Filtered water
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">26<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Cider Black Hill
-                                                      <span class="project-card__item__vol"><sup>0.33l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Bonaqua sparkling
+                                                            <span class="project-card__item__vol"><sup>0.25l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lobkowitz premium black
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Roemerquelle still / sparkling
+                                                            <span class="project-card__item__vol"><sup>0.75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">86<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Homemade lemonade
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
+                                                </div>
                                           </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Homemade lemonade seasonal
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">56<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Homemade iced tea hibiscus 
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">56<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Homemade iced tea with mint and lemon 
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">56<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lassi patiala seasonal
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">76<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lassi patiala
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Coca-Cola can
+                                                            <span class="project-card__item__vol"><sup>0.25l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Coca-Cola Zero can
+                                                            <span class="project-card__item__vol"><sup>0.25l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Fever-tree tonic water
+                                                            <span class="project-card__item__vol"><sup>0.2l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Ginger beer
+                                                            <span class="project-card__item__vol"><sup>0.2l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Fruit juice réva Rakvice
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">26<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks, beer" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">DRAFT BEER</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lobkowitz premium lager
-                                                      <span class="project-card__item__vol"><sup>0.3l</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                              <div data-category="all, alcoholic drinks, beer" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">BEER BOTTLED & NON-ALCOHOLIC</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            King Fisher
+                                                            <span class="project-card__item__vol"><sup>0.33l</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">96<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">26<sup>CZK</sup></div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lobkowitz premium non-alcoholic
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                                </div>
                                           </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Cider Black Hill
+                                                            <span class="project-card__item__vol"><sup>0.33l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lobkowitz premium black
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
+                                                </div>
+                                          </div>
+
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
+                              </div>
+
+                              <div data-category="all, alcoholic drinks, beer" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">DRAFT BEER</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
                                                             Lobkowitz premium lager
-                                                      <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                            <span class="project-card__item__vol"><sup>0.3l</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">26<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      IPA Flying Cloud
-                                                      <span class="project-card__item__vol"><sup>0.4l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                                  Lobkowitz premium lager
+                                                            <span class="project-card__item__vol"><sup>0.5l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            IPA Flying Cloud
+                                                            <span class="project-card__item__vol"><sup>0.4l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
+                                                </div>
                                           </div>
-                                    </div>
 
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                    </div>
                               </div>
-                        </div>
 
-                        <div data-category="all, non-alcoholic drinks, hot drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">HOT DRINKS</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Espresso
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                              <div data-category="all, non-alcoholic drinks, hot drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">HOT DRINKS</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Espresso
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Capuccino
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Capuccino
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Espresso machiatto
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Espresso machiatto
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Latte machiatto
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Latte machiatto
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">46<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">46<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
 
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                    </div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">COCKTAILS / MOCKTAILS</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Mojito
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">COCKTAILS / MOCKTAILS</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Mojito
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">106<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">106<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Cuba Libre
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Cuba Libre
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">96<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">96<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Margarita
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Margarita
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">126<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">126<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Frozen fruity margarita seasonal
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Frozen fruity margarita seasonal
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Indian gin and tonic
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Indian gin and tonic
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">176<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">176<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lynchburg lemonade
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lynchburg lemonade
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Aperol Spritz
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Aperol Spritz
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">96<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">96<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Virgin mojito
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Virgin mojito
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">86<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">86<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">APERITIVES</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Aperol
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">APERITIVES</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Aperol
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Prosseco
-                                                      <span class="project-card__item__vol"><sup>0,1l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Prosseco
+                                                            <span class="project-card__item__vol"><sup>0,1l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
 
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                    </div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">RUM</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Havana Club
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">RUM</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Havana Club
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Old Monk
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Old Monk
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">76<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">76<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Don Papa
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Don Papa
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">COGNAC</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Martel V.S.
-                                                      <span class="project-card__item__vol"><sup></sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">COGNAC</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Martel V.S.
+                                                            <span class="project-card__item__vol"><sup></sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">116<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">116<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">GIN</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Opihr
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">GIN</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Opihr
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">116<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">116<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Hendricks
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Hendricks
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">76<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">76<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Beefeater
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Beefeater
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">TEQUILA</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Pepe Lopez silver
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">TEQUILA</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Pepe Lopez silver
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Pepe Lopez gold
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Pepe Lopez gold
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">VODKA</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Russian standard
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">VODKA</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Russian standard
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Absolut Blue
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Absolut Blue
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
-                        <div data-category="all, alcoholic drinks" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">WHISKEY</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Jack Daniels
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                              <div data-category="all, alcoholic drinks" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">WHISKEY</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Jack Daniels
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">96<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">96<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Bushmills
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Bushmills
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">66<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">66<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Amrut Indian single malt 46%
-                                                      <span class="project-card__item__vol"><sup>4cl</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Amrut Indian single malt 46%
+                                                            <span class="project-card__item__vol"><sup>4cl</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">HOUSE WINE</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Réva Rakvice, according to the offer
-                                                      <span class="project-card__item__vol"><sup>0,15l</sup></span>
+                              <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">HOUSE WINE</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Réva Rakvice, according to the offer
+                                                            <span class="project-card__item__vol"><sup>0,15l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">36<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">36<sup>CZK</sup></div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">BOTTLED WHITE WINE</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Pálava
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                              <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">BOTTLED WHITE WINE</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Pálava
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">246<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Moravské zemské, semi-dry, Rakvice</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">246<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Moravské zemské, semi-dry, Rakvice</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Rulandské šedé
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Rulandské šedé
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">226<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Moravské zemské, dry , Rakvice</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">226<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Moravské zemské, dry , Rakvice</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Rulandské bílé
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Rulandské bílé
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">216<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Moravské zemské, dry, Rakvice</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">216<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Moravské zemské, dry, Rakvice</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Muller Thurgau
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Muller Thurgau
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">286<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Kabinet, Milan Sůkal, Nový Poddvorov</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">286<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Kabinet, Milan Sůkal, Nový Poddvorov</div>
-                                          </div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
-                        <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">BOTTLED RED WINE</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Dornfelder
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                              <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">BOTTLED RED WINE</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Dornfelder
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">246<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Pozdní sběr, Rakvice</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">246<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Pozdní sběr, Rakvice</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Zweigeltrebe
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Zweigeltrebe
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">246<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Pozdní sběr, Rakvice</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">246<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Pozdní sběr, Rakvice</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Cabarnet Sauvignon
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Cabarnet Sauvignon
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">286<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Milan Sůkal, Nový Poddvorov</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">286<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Milan Sůkal, Nový Poddvorov</div>
-                                          </div>
+                                          
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
-                        <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">SPARKLING WINE</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Prosecco
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                              <div data-category="all, alcoholic drinks, wine" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">SPARKLING WINE</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Prosecco
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">296<sup>CZK</sup></div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">296<sup>CZK</sup></div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Frizzante Muškát
-                                                      <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Frizzante Muškát
+                                                            <span class="project-card__item__vol"><sup>0,75l</sup></span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">256<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Moravský, Rakvice, sweet</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">256<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Moravský, Rakvice, sweet</div>
-                                          </div>
+                                          
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                                     </div>
-                                    
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
                               </div>
-                        </div>
 
-                        <div data-category="all, tapas" class="grid-layout__item">
-                              <div class="project-card shadow-depth2">
-                                    <h3 class="project-card__title logo-font">INDIAN TAPAS</h3>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Chicken Biryani
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                              <div data-category="all, tapas" class="grid-layout__item">
+                                    <div class="project-card shadow-depth2">
+                                          <h3 class="project-card__title logo-font">INDIAN TAPAS</h3>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Chicken Biryani
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Aromatic basmati and chicken casserole.</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Aromatic basmati and chicken casserole.</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      Lamb Biryani
-                                                      <span class="project-card__item__vol"><sup>(7)</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            Lamb Biryani
+                                                            <span class="project-card__item__vol"><sup>(7)</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">176<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Aromatic basmati and lamb casserole.</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">176<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Aromatic basmati and lamb casserole.</div>
-                                          </div>
-                                    </div>
-                                    <div class="row project-card__item">
-                                          <div class="col-9">
-                                                <div class="project-card__item-name headline-font text-font">
-                                                      D6 chicken tikka
-                                                      <span class="project-card__item__vol"><sup>(7,10)</sup></span>
-                                                      <span class="project-card__icon">
-                                                            <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
-                                                      </span>
+                                          <div class="row project-card__item">
+                                                <div class="col-9">
+                                                      <div class="project-card__item-name headline-font text-font">
+                                                            D6 chicken tikka
+                                                            <span class="project-card__item__vol"><sup>(7,10)</sup></span>
+                                                            <span class="project-card__icon">
+                                                                  <img src="./assets/images/icons/indiancircle.png" alt="dilli6 gluten free icon">
+                                                            </span>
+                                                      </div>
+                                                </div>
+                                                <div class="col-3">
+                                                      <div class="project-card__price headline-font">136<sup>CZK</sup></div>
+                                                </div>
+                                                <div class="col-12">
+                                                      <div class="project-card__item-desc text-font">Chicken morsels marinated in handpicked spices and garlic with yoghurt, mint chutney, served with indian bread.</div>
                                                 </div>
                                           </div>
-                                          <div class="col-3">
-                                                <div class="project-card__price headline-font">136<sup>CZK</sup></div>
-                                          </div>
-                                          <div class="col-12">
-                                                <div class="project-card__item-desc text-font">Chicken morsels marinated in handpicked spices and garlic with yoghurt, mint chutney, served with indian bread.</div>
-                                          </div>
-                                    </div>
 
-                                    <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                          <div class="project-card__overlay gradient--lightbluelightgreen"></div>
+                                    </div>
                               </div>
-                        </div>
 
+                        </div>
+                        <!-- isotope grid  END-->
                   </div>
-                  <!-- isotope grid  END-->
-            </div>
-      </section>
+            </section>
 
-      <section class="section section-parallax">
-            <div class="parallax__content">
+            <section class="section section-parallax">
+                  <div class="parallax__content">
+                        <div class="container">
+                              <h2 class="parallax__title script-font">Unique concept</h2>
+                        </div>
+                  </div>
+                  <div class="parallax__overlay parallax__overlay--gradient gradient--yellowdarkgreenlightgreen"></div>
+                  <div class="parallax__container parallax__container--image2 parallax__container--bw"></div>
+            </section>
+
+            <section class="section section-suppliers gradient--yellowdarkgreenlightgreen">
+                  <div class="suppliers-stripe">
+                        <div class="container">
+                              <h2 class = "section__title text-center">WE WORK WITH THE BEST</h2>
+                              <h4 class = "section__subtitle text-center"">We are selecting our suppliers with great care</h4>
+                              <div class="row align-items-center justify-content-around mt-4">
+                                    <div class="col-12 col-md-4">
+                                          <a href="https://www.coca-cola.cz/cs/home/" class ="suppliers-stripe__item-link" target = "_blank">
+                                                <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_coca-cola_white.png" alt="Coca Cola logo">
+                                          </a>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                          <a href="http://www.pivovary-lobkowicz.cz/" class ="suppliers-stripe__item-link" target = "_blank">
+                                                <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_lobkowicz_white.png" alt="Lobkowitz logo">
+                                          </a>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                          <a href="http://www.vinorakvice.cz/" class ="suppliers-stripe__item-link" target = "_blank">
+                                                <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_rakvice_white.png" alt="Rakvice logo">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+      </div>
+
+      <div id="section-contact">
+
+            <section class="section section-contact gradient--mediumgreydarkgrey d-block d-sm-none">
+                  <div class="contact__info__wrapper">
+                        <h2 class = "section__title text-center">CONTACT&nbsp;INFO</h2>
+                        <h4 class = "section__text text-center section__text--lead">Dilli6 Indian Bistro & Bar</h4>
+                        <address class="contact__info__wrapper--address">
+                              <p class = "section__text">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zenklova 232,<br> 182 00 Praha 8 - Kobylisy</span>
+                              </p>
+                              <p class = "section__text">
+                                    <span><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;++420&nbsp;721&nbsp;566&nbsp;717</span>
+                              </p>
+                              <p class = "section__text">
+                                    <span><i class="far fa-envelope"></i>&nbsp;&nbsp;info@dilli6.cz</span>
+                              </p>
+                        </address>
+                  </div>
+            </section>
+
+            <section class="section section-map">
+                  <div class="contact__map" id="contact-map"></div>
+                  <aside class="contact__info__wrapper contact__info__wrapper--map d-none d-sm-block">
+                        <h2 class = "section__title">CONTACT&nbsp;INFO</h2>
+                        <h4 class = "section__text section__text--lead">Dilli6 Indian Bistro & Bar</h4>
+                        <address>
+                              <p class = "section__text">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zenklova 232,<br> 182 00 Praha 8 - Kobylisy</span>
+                              </p>
+                              <p class = "section__text">
+                                    <span><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;++420&nbsp;721&nbsp;566&nbsp;717</span>
+                              </p>
+                              <p class = "section__text">
+                                    <span><i class="far fa-envelope"></i>&nbsp;&nbsp;info@dilli6.cz</span>
+                              </p>
+                        </address>
+                  </aside>
+            </section>
+
+            <section class="section section-openinghours">
                   <div class="container">
-                        <h2 class="parallax__title script-font">Unique concept</h2>
+                        <h3 class="section__title text-center">OPENING&nbsp;HOURS</h3>
+                        <h3 class="section__text text-center section__text--lead" id="oh-message"></h3> <!-- msg written in by Javascript-->
+                        <table class="oh-table" id="main-opening-hours">
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Monday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Tuesday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>Wednesday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Thursday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Friday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 12:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Saturday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 12:00<sup>p.m.</sup></td>
+                              </tr>
+                              <tr class="oh-table__row">
+                                    <td class="oh-table__day">
+                                          <span class="oh-table__day--holiday-icon">
+                                                <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
+                                          </span>
+                                    Sunday</td>
+                                    <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
+                              </tr>
+                        </table>
+                        <p class="section__text text-center">Opening hours may differ on public holidays  <i class="fas fa-umbrella-beach"></i> in Czech Republic.</p>
+                        <p id="oh-publicholidays-msg" class="section__text text-center">There are the following public holidays in Czech Republic this week: </p>
+                        <p id="oh-publicholidays" class="section__text text-center" > </p>
                   </div>
-            </div>
-            <div class="parallax__overlay parallax__overlay--gradient gradient--yellowdarkgreenlightgreen"></div>
-            <div class="parallax__container parallax__container--image2 parallax__container--bw"></div>
-      </section>
+            </section>
 
-      <section class="section section-suppliers gradient--yellowdarkgreenlightgreen">
-            <div class="suppliers-stripe">
-                  <div class="container">
-                        <h2 class = "section__title text-center">WE WORK WITH THE BEST</h2>
-                        <h4 class = "section__subtitle text-center"">We are selecting our suppliers with great care</h4>
-                        <div class="row align-items-center justify-content-around mt-4">
-                              <div class="col-12 col-md-4">
-                                    <a href="https://www.coca-cola.cz/cs/home/" class ="suppliers-stripe__item-link" target = "_blank">
-                                          <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_coca-cola_white.png" alt="Coca Cola logo">
-                                    </a>
-                              </div>
-                              <div class="col-12 col-md-4">
-                                    <a href="http://www.pivovary-lobkowicz.cz/" class ="suppliers-stripe__item-link" target = "_blank">
-                                          <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_lobkowicz_white.png" alt="Lobkowitz logo">
-                                    </a>
-                              </div>
-                              <div class="col-12 col-md-4">
-                                    <a href="http://www.vinorakvice.cz/" class ="suppliers-stripe__item-link" target = "_blank">
-                                          <img class="suppliers-stripe__item-link__image animation__supplier" src="./assets/images/suppliers/logo_rakvice_white.png" alt="Rakvice logo">
-                                    </a>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </section>
-
-      <section class="section section-contact gradient--mediumgreydarkgrey d-block d-sm-none">
-            <div class="contact__info__wrapper">
-                  <h2 class = "section__title text-center">CONTACT&nbsp;INFO</h2>
-                  <h4 class = "section__text text-center section__text--lead">Dilli6 Indian Bistro & Bar</h4>
-                  <address class="contact__info__wrapper--address">
-                        <p class = "section__text">
-                              <span><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zenklova 232,<br> 182 00 Praha 8 - Kobylisy</span>
-                        </p>
-                        <p class = "section__text">
-                              <span><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;++420&nbsp;721&nbsp;566&nbsp;717</span>
-                        </p>
-                        <p class = "section__text">
-                              <span><i class="far fa-envelope"></i>&nbsp;&nbsp;info@dilli6.cz</span>
-                        </p>
-                  </address>
-            </div>
-      </section>
-
-      <section class="section section-map">
-            <div class="contact__map" id="contact-map"></div>
-            <div class="contact__info__wrapper contact__info__wrapper--map d-none d-sm-block">
-                  <h2 class = "section__title">CONTACT&nbsp;INFO</h2>
-                  <h4 class = "section__text section__text--lead">Dilli6 Indian Bistro & Bar</h4>
-                  <address>
-                        <p class = "section__text">
-                              <span><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zenklova 232,<br> 182 00 Praha 8 - Kobylisy</span>
-                        </p>
-                        <p class = "section__text">
-                              <span><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;++420&nbsp;721&nbsp;566&nbsp;717</span>
-                        </p>
-                        <p class = "section__text">
-                              <span><i class="far fa-envelope"></i>&nbsp;&nbsp;info@dilli6.cz</span>
-                        </p>
-                  </address>
-            </div>
-      </section>
-
-      <section class="section section-openinghours">
-            <div class="container">
-                  <h3 class="section__title text-center">OPENING&nbsp;HOURS</h3>
-                  <h3 class="section__text text-center section__text--lead" id="oh-message"></h3> <!-- msg written in by Javascript-->
-                  <table class="oh-table" id="main-opening-hours">
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Monday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Tuesday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>Wednesday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Thursday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Friday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 12:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Saturday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 12:00<sup>p.m.</sup></td>
-                        </tr>
-                        <tr class="oh-table__row">
-                              <td class="oh-table__day">
-                                    <span class="oh-table__day--holiday-icon">
-                                          <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;
-                                    </span>
-                              Sunday</td>
-                              <td class="oh-table__hours">11:00<sup>a.m.</sup> - 11:00<sup>p.m.</sup></td>
-                        </tr>
-                  </table>
-                  <p class="section__text text-center">Opening hours may differ on public holidays  <i class="fas fa-umbrella-beach"></i> in Czech Republic.</p>
-                  <p id="oh-publicholidays-msg" class="section__text text-center">There are the following public holidays in Czech Republic this week: </p>
-                  <p id="oh-publicholidays" class="section__text text-center" > </p>
-            </div>
-      </section>
-
+      </div>
 
       <footer class="section site-footer gradient--mediumgreydarkgrey"> <!-- gradient--mediumgreydarkgrey -->
             
@@ -2024,14 +2045,14 @@
 
       <section class="section site-footer__author">
             <div class="container">
-                  <div class="site-footer__author--wrapper">
+                  <a class="site-footer__author--wrapper" href="http://www.ahastudio.cz/" target="_blank">
                         <span class="site-footer__author--img" >
                               <img  img src="./assets/images/AHASTUDIO_logo_white_inv.png" alt="ahastudio logo">
                         </span>
                         <span>
                               Designed and developed by &copy;AHAstudio. 
                         </span>
-                  </div>
+                  </a>
             </div>
       </section>
 

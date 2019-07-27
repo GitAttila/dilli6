@@ -2,7 +2,6 @@ import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 import TweenMax from 'gsap/src/uncompressed/TweenMax';
-// import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin';
 
 class Animations {
     constructor() {
@@ -12,46 +11,28 @@ class Animations {
 
     events () {
         let _self = this;
-        $('#menuContent a[data-filter]').each(function(){
-            let sectionName = $(this).data('filter').trim().toLowerCase();
-            let sectionDuration = $('.section-' + sectionName).innerHeight();
+        $('#menuContent a[data-sectionlink]').each(function(){
+            let sectionName = $(this).data('sectionlink').trim().toLowerCase();
+            let sectionDuration = $(sectionName).innerHeight();
+            if (sectionName === '#section-hero') {
+                sectionDuration = sectionDuration - (sectionDuration/100)*12;
+            }
             // console.log(sectionName, sectionDuration);
-            sectionName === 'awards' ? sectionDuration = '100%' : sectionDuration = sectionDuration;
-            if (sectionName === 'hero') {sectionDuration = sectionDuration - 100}
             _self.siteScene[sectionName] = new ScrollMagic.Scene({
-                triggerElement: ".section-" + sectionName,
+                triggerElement: sectionName,
                 triggerHook: "onCenter",
                 duration: sectionDuration
-            })
-            .setClassToggle("a[data-filter='" + sectionName + "']","primary-nav__link--active")
-            // .addIndicators({
-            //     name: "section-" + sectionName
-            // })
-            .addTo(_self.controller);
+                })
+                .setClassToggle("a[data-sectionlink='" + sectionName + "']","primary-nav__link--active")
+                // .addIndicators({
+                //     name: sectionName
+                // })
+                .addTo(_self.controller);
         });
 
-        _self.controller.scrollTo(function(newpos){
-            TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
-        });
-
-        $('#menuContent').on('click','a[data-filter]', function(e) {
-            e.preventDefault();
-            let secElem = $(this).data('filter').trim().toLowerCase();
-            if (secElem !== '') {
-                if ($('.section-' + secElem).length>0) {
-                    let posElem = $('.section-' + secElem).offset().top;
-                    console.log(secElem, posElem);
-                    $("html, body").animate({
-                        scrollTop: posElem
-                    }, 500);
-                    // _self.controller.scrollTo(posElem);
-                }
-            }
-        });
-
-        let paralDur = $('.section-hero').innerHeight();
-        const heroParallax = new ScrollMagic.Scene({
-            triggerElement: ".section-about",
+        let paralDur = $('#section-hero').innerHeight();
+        const heroParallaxScene= new ScrollMagic.Scene({
+            triggerElement: "#section-about",
             triggerHook: "0.95",
             duration: paralDur
             })
@@ -61,21 +42,32 @@ class Animations {
             // })
             .addTo(_self.controller);
 
-        const revealNavBar = new ScrollMagic.Scene({
-                triggerElement: ".section-about",
-                triggerHook: 0.5, 
-                offset: 50
+        const revealNavBarScene = new ScrollMagic.Scene({
+                triggerElement: "#section-about",
+                triggerHook: 0.66, 
+                offset: 0
             })
-            .setClassToggle("#site-header", "layer__opacity-100")
+            .setClassToggle(".site-header", "layer__opacity-100")
             // .addIndicators({
             //     name: "reveal NavBar"
             // }) 
             .addTo(_self.controller);
 
+        const revealJumpUpBtnScene = new ScrollMagic.Scene({
+                triggerElement: "#section-about",
+                triggerHook: 0.66, 
+                offset: 0
+            })
+            .setClassToggle("#jump-up", "visible")
+            // .addIndicators({
+            //     name: "revealJumpUpBtnScene"
+            // }) 
+            .addTo(_self.controller);
+
         let staggerTech = TweenMax.staggerTo(".animation__supplier", 0.3, {transform: "scale(1)", ease: Back.easeOut}, 0.2);
-        new ScrollMagic.Scene({
+        const suppliersScene = new ScrollMagic.Scene({
             triggerElement: ".section-suppliers",
-            triggerHook: 0.66,
+            triggerHook: 0.6,
         })
         .setTween(staggerTech)
         // .addIndicators({
@@ -94,7 +86,7 @@ class Animations {
         function resetSceneDurations(){
             $(Object.keys(_self.siteScene)).each(function(key,val){
                 let value = val.trim().toLowerCase();
-                let dur = $(".section-" + value )[0].offsetHeight;
+                let dur = $(value)[0].offsetHeight;
                 // console.log(value, dur);
                 _self.siteScene[this].duration(dur);
             });

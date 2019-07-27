@@ -3,12 +3,12 @@
 import initMap from './modules/map';
 window.initMap = initMap;
 import Carousels from './modules/carousels';
-import MobileNavigation from './modules/mobilenav';
-import './modules/smsetup';
+import Navigation from './modules/navigation';
+import './modules/animsetup';
 import Projects from './modules/projects';
 import OpeningHours from './modules/openinghours';
 
 var carousels = new Carousels();
-var mobilenavigation = new MobileNavigation;
+var navigation = new Navigation;
 var projects = new Projects();
 var oh = new OpeningHours();

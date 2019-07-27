@@ -1,7 +1,7 @@
 import animFunc from './animatecss';
 import Isotope from 'isotope-layout';
 import imagesLoaded from 'imagesloaded';
-import Animations from './smsetup';
+import AnimateCss from './animsetup';
 import Gallery from './gallery';
 import IsMobile from './ismobile';
 class Projects {
@@ -17,7 +17,7 @@ class Projects {
         this.updateProjectsGrid = function() {
             this.projectsGrid.layout();
         };
-        this.anims = new Animations();
+        this.anims = new AnimateCss();
         this.gallery= new Gallery();
     }
 
@@ -96,11 +96,6 @@ class Projects {
             $("#menu-filter .filter__item").removeClass("btn-site--active");
             $(this).addClass("btn-site--active");
             $('#menu-filter .filter__item').addClass('btn-site--disabled');
-
-            // collapse the nav menu on mobile after a menu item has been clicked
-            if ($("#menuContent").hasClass('show')) {
-                $("#menuContent").delay(300).collapse('hide');
-            }
 
             grid.arrange({
                 filter: function(item){

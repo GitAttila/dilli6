@@ -100,7 +100,24 @@
             font-size: 2rem;
         }
     }
+    &--nav-icon {
+        opacity: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+        background-color: rgba(0,0,0,0.5);
+        background-image: none;
+        transition: opacity 0.25s ease-in-out;
+        & .btn-site__label {
+            font-size: 1rem;
+        }
+        &.visible {
+            opacity: 1;
+        }
+    }
 }
+
 .btn__jump-down {
     position: absolute;
     z-index: 100;
@@ -121,6 +138,6 @@
         transform:translate(-50%, -80%);
     }
     &:hover {
-        color: $highlight-text-color;
+        color: $D6-lightblue;
     }
 }
