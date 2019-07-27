@@ -47,7 +47,6 @@ class Navigation {
 
         $('#jump-down').on( 'click', function() {
             let pos = $('#section-about')[0].offsetTop;
-            console.log(pos);
             _self.scrollTo('html, body', pos, function(){});
         });
     }
