@@ -49,6 +49,13 @@ class Navigation {
             let pos = $('#section-about')[0].offsetTop;
             _self.scrollTo('html, body', pos, function(){});
         });
+
+        $('#btn-hero-order').on( 'click', function(e) {
+            e.preventDefault();
+            let pos = $('.section-order')[0].offsetTop;
+            _self.scrollTo('html, body', pos, function(){});
+        });
+        
     }
     
     toggleTheMenu() {

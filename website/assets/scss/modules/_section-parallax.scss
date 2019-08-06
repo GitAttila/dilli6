@@ -6,12 +6,24 @@
         width: 100%;
         height: 100%;
         z-index: 0;
-        background-image: url('../../../assets/images/parallax/d6_parallax_01.jpg');
+        background-image: url('../../../assets/images/parallax/d6_parallax_sm_01.jpg');
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;
+        @include atMedium {
+            background-image: url('../../../assets/images/parallax/d6_parallax_md_01.jpg');
+        }
+        @include atLarge {
+            background-image: url('../../../assets/images/parallax/d6_parallax_lg_01.jpg');
+        }
         &--image2 {
-            background-image: url('../../../assets/images/parallax/d6_parallax_02.jpg');
+            background-image: url('../../../assets/images/parallax/d6_parallax_sm_02.jpg');
+            @include atMedium {
+                background-image: url('../../../assets/images/parallax/d6_parallax_md_02.jpg');
+            }
+            @include atLarge {
+                background-image: url('../../../assets/images/parallax/d6_parallax_lg_02.jpg');
+            }
         }
         &--bw {
             filter: saturate(0);
