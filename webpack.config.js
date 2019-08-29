@@ -43,7 +43,7 @@ module.exports = {
             chunks: 'all'
         },
         minimizer: [
-            new UglifyJsPlugin()
+            // new UglifyJsPlugin()
         ]
     },
     plugins: [

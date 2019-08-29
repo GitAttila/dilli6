@@ -20,16 +20,11 @@ class OpeningHours {
         this.ohMsg = '';
         this.curCountdownHrs = 0;
         this.curCountdownMins = 0;
-        this.initOH();
-        this.publicHolidays = new Holidays();
-    }
-    
-    initOH() {
-        let oh = [
+        this.oh = [
             {
-                openingHr: 11,  //Sunday
+                openingHr: 0,  //Sunday
                 openingMin: 0,
-                closingHr: 22,
+                closingHr: 0,
                 closingMin: 0
             },
             {
@@ -69,8 +64,16 @@ class OpeningHours {
                 closingMin: 0
             }
         ];
+        this.initOH();
+        this.publicHolidays = new Holidays();
+    }
+    
+    initOH() {
         this.updateToday();
-        this.initOhMsg(oh);
+        this.initOhMsg(this.oh);
+        let htmlOHSnippet = this.buildOHtable(this.oh);
+        console.log(htmlOHSnippet);
+        $('#oh-table-snippet').html(htmlOHSnippet);
     }
 
     updateToday() {
@@ -186,7 +189,24 @@ class OpeningHours {
         
     }
 
-
+    buildOHtable(ohData) {
+        let _self = this;
+        let html = '';
+        let dayIndex = 0;
+        for (let i = 0; i <= 6; i++) {
+            dayIndex = i + 1;
+            dayIndex === 7 ? dayIndex = 0 : dayIndex = dayIndex;
+            html+= '<tr class="oh-table__row">';
+            html+= '<td class="oh-table__day">';
+            html+= '<span class="oh-table__day--holiday-icon"><i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp</span>';
+            html+= _self.days[dayIndex];
+            html+= '</td>'
+            html+= '<td class="oh-table__hours">' + ohData[dayIndex].openingHr + ':' + ohData[dayIndex].openingMin + '<sup>a.m.</sup> - ';
+            html+= ohData[dayIndex].closingHr + ':' + ohData[dayIndex].closingMin + '<sup>p.m.</sup></td></tr>';
+        }
+        html = '<table class="oh-table" id="main-opening-hours">' + html + '</table>';
+        return html;
+    }
 }
 
 export default OpeningHours;
