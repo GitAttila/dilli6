@@ -65,6 +65,9 @@ input {
     &--lightgreymediumgrey {
         background: linear-gradient(-55deg, $D6-lightgrey, $D6-mediumgrey);
     }
+    &--lightgreydirtywhite {
+        background: linear-gradient(-55deg, $D6-lightgrey, $disabled-text-color);
+    }
 }
 
 $class-slug:layer__opacity !default;
