@@ -67,20 +67,20 @@ class OpeningHours {
         this.initOH();
         this.publicHolidays = new Holidays();
     }
-    
+
     initOH() {
+        let htmlOHSnippet = this.buildOHtable(this.oh);
+        $('#oh-table-snippet').html(htmlOHSnippet);
         this.updateToday();
         this.initOhMsg(this.oh);
-        let htmlOHSnippet = this.buildOHtable(this.oh);
-        console.log(htmlOHSnippet);
-        $('#oh-table-snippet').html(htmlOHSnippet);
     }
 
     updateToday() {
         let numOfDay = this.getNowDate().getDay();
-        let indexOfDay = 0 ? numOfDay = 6 : numOfDay = numOfDay -1;
-        $('#main-opening-hours .oh-table__row').removeClass('oh-table__row--active');
-        $($('#main-opening-hours .oh-table__row').eq(indexOfDay)).addClass('oh-table__row--active');
+        let indexOfDay = numOfDay === 0 ? numOfDay = 6 : numOfDay = numOfDay -1;
+        console.log($('#oh-table-snippet .oh-table__row'));
+        $('#oh-table-snippet .oh-table__row').removeClass('oh-table__row--active');
+        $($('#oh-table-snippet .oh-table__row').eq(indexOfDay)).addClass('oh-table__row--active');
     }
 
     updateTimeMsg(msg,hrs,mins){
@@ -93,7 +93,6 @@ class OpeningHours {
             this.curCountdownHrs = hrs;
             this.curCountdownMins = mins;
         }
-        // console.log(msg,hrs,mins,this.curCountdownHrs,this.curCountdownMins);
     }
 
     countTimeDiff(fromTime, toTime){
@@ -196,16 +195,31 @@ class OpeningHours {
         for (let i = 0; i <= 6; i++) {
             dayIndex = i + 1;
             dayIndex === 7 ? dayIndex = 0 : dayIndex = dayIndex;
+            let calcHrs = ohData[dayIndex].openingHr + ohData[dayIndex].closingHr;
+            let calcMins = ohData[dayIndex].openingMin + ohData[dayIndex].closingMin;
             html+= '<tr class="oh-table__row">';
             html+= '<td class="oh-table__day">';
             html+= '<span class="oh-table__day--holiday-icon"><i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp</span>';
             html+= _self.days[dayIndex];
             html+= '</td>'
-            html+= '<td class="oh-table__hours">' + ohData[dayIndex].openingHr + ':' + ohData[dayIndex].openingMin + '<sup>a.m.</sup> - ';
-            html+= ohData[dayIndex].closingHr + ':' + ohData[dayIndex].closingMin + '<sup>p.m.</sup></td></tr>';
+            html+= '<td class="oh-table__hours">';
+            if (calcHrs + calcMins !== 0 ) {
+                html+= meridiemTime(ohData[dayIndex].openingHr) + ':' + normalizeDigit(ohData[dayIndex].openingMin) + '<sup>a.m.</sup> - ';
+                html+= meridiemTime(ohData[dayIndex].closingHr) + ':' + normalizeDigit(ohData[dayIndex].closingMin) + '<sup>p.m.</sup>';
+            } else {
+                html+= 'closed';
+            }
+            html+= '</td></tr>';
         }
         html = '<table class="oh-table" id="main-opening-hours">' + html + '</table>';
         return html;
+
+        function normalizeDigit(num) {
+            return num > 9 ? '' + num : '0' + num;
+        }
+        function meridiemTime(num) {
+            return num > 12 ? num-12 : num;
+        }
     }
 }
 
