@@ -48,7 +48,7 @@ var paths = {
         dest: './dist/assets/videos'
     },
     rootfiles: {
-        src: './website/*.{txt,png,ico,webmanifest}',
+        src: './website/*.{txt,svg,png,ico,xml,webmanifest}',
         dest: './dist'
     },
     temp: {
