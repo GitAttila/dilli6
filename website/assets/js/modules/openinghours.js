@@ -78,7 +78,6 @@ class OpeningHours {
     updateToday() {
         let numOfDay = this.getNowDate().getDay();
         let indexOfDay = numOfDay === 0 ? numOfDay = 6 : numOfDay = numOfDay -1;
-        console.log($('#oh-table-snippet .oh-table__row'));
         $('#oh-table-snippet .oh-table__row').removeClass('oh-table__row--active');
         $($('#oh-table-snippet .oh-table__row').eq(indexOfDay)).addClass('oh-table__row--active');
     }
