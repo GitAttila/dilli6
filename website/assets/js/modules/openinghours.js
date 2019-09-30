@@ -20,49 +20,58 @@ class OpeningHours {
         this.ohMsg = '';
         this.curCountdownHrs = 0;
         this.curCountdownMins = 0;
+        // this.oh = [
+        //     {
+        //         openingHr: 0,  //Sunday
+        //         openingMin: 0,
+        //         closingHr: 0,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,
+        //         openingMin: 0,
+        //         closingHr: 23,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,
+        //         openingMin: 0,
+        //         closingHr: 23,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,
+        //         openingMin: 0,
+        //         closingHr: 23,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,
+        //         openingMin: 0,
+        //         closingHr: 23,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,
+        //         openingMin: 0,
+        //         closingHr: 24,
+        //         closingMin: 0
+        //     },
+        //     {
+        //         openingHr: 11,  //Saturday
+        //         openingMin: 0,
+        //         closingHr: 24,
+        //         closingMin: 0
+        //     }
+        // ];
         this.oh = [
-            {
-                openingHr: 0,  //Sunday
-                openingMin: 0,
-                closingHr: 0,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,
-                openingMin: 0,
-                closingHr: 23,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,
-                openingMin: 0,
-                closingHr: 23,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,
-                openingMin: 0,
-                closingHr: 23,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,
-                openingMin: 0,
-                closingHr: 23,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,
-                openingMin: 0,
-                closingHr: 24,
-                closingMin: 0
-            },
-            {
-                openingHr: 11,  //Saturday
-                openingMin: 0,
-                closingHr: 24,
-                closingMin: 0
-            }
+            [[12,0],[22,0]], //Sunday
+            [[11,0],[15,0],[17,0],[22,0]],
+            [[11,0],[15,0],[17,0],[22,0]],
+            [[11,0],[15,0],[17,0],[22,0]],
+            [[11,0],[15,0],[17,0],[22,0]],
+            [[11,0],[15,0],[17,0],[22,0]],
+            [[12,0],[22,0]] //Saturday
         ];
         this.initOH();
         this.publicHolidays = new Holidays();
@@ -131,8 +140,8 @@ class OpeningHours {
             nowTimeData.getFullYear(),
             nowTimeData.getMonth(), 
             nowTimeData.getDate(),
-            benchmarkedOHdata[action + 'Hr'], 
-            benchmarkedOHdata[action + 'Min'],
+            benchmarkedOHdata[0], 
+            benchmarkedOHdata[1],
             0
         );
         let countDownTime = this.countTimeDiff(nowTimeData, compareToDate);
@@ -151,18 +160,26 @@ class OpeningHours {
     initOhMsg(ohData) {
         let _self = this;
         let msg;
-        let now = this.getNowDate();
-        //now = new Date('2018','9','21','22','5','0');
+        let now = _self.getNowDate();
+        // now = new Date('2019','8','30','10','41','0');
         let nowHours = now.getHours();
-
+        
         // is it opened or closed today?
-        if (nowHours>=ohData[now.getDay()].openingHr && nowHours<ohData[now.getDay()].closingHr ) {
+        let checkOpened = checkIfOpened(nowHours,ohData[now.getDay()]);
+
+        if (checkOpened.isOpened) {
             msg = "We are open at the moment.";
             _self.updateTimeMsg(msg);
-            if (ohData[now.getDay()].closingHr - nowHours <=2) {
+            if (ohData[now.getDay()][checkOpened.pos + 1][0] - nowHours <=2) {
                 this.clockInterval(function(){
                     now = _self.getNowDate();
-                    msg = _self.compileMsg(ohData[now.getDay()], now, 'closing');
+                    msg = _self.compileMsg(
+                        [
+                            ohData[now.getDay()][checkOpened.pos + 1][0], 
+                            ohData[now.getDay()][checkOpened.pos + 1][1]
+                        ], 
+                        now, 
+                        'closing');
                     _self.updateTimeMsg(msg.msg,msg.hours, msg.minutes);
                     _self.updateToday();
                 });
@@ -172,15 +189,50 @@ class OpeningHours {
         }  else  {
             msg = "Restaurant is now closed.";
             _self.updateTimeMsg(msg);
-            if (Math.abs(ohData[now.getDay()].openingHr - nowHours) <=2) {
+            if (Math.abs(ohData[now.getDay()][checkOpened.pos][0] - nowHours) <=2) {
                 this.clockInterval(function(){
                     now = _self.getNowDate();
-                    msg = _self.compileMsg(ohData[now.getDay()], now, 'opening');
+                    msg = _self.compileMsg(
+                        [
+                            ohData[now.getDay()][checkOpened.pos][0], 
+                            ohData[now.getDay()][checkOpened.pos][1]
+                        ],
+                        now, 
+                        'opening');
                     _self.updateTimeMsg(msg.msg,msg.hours, msg.minutes);
                     _self.updateToday();
                 });
             } else {
                 _self.updateTimeMsg(msg);
+            }
+        }
+        // helper functions
+        function checkIfOpened(hourToCheck, timeIntArr) {
+            let pos = 0;
+            for (var i = 0; i < timeIntArr.length - 1; i++) {
+                if (i%2 === 0) {
+                    if (hourToCheck >= timeIntArr[i][0] && hourToCheck < timeIntArr[i+1][0]) {
+                        pos = i;
+                        return {
+                            isOpened: true,
+                            pos: pos
+                        }
+                    }
+                    if (hourToCheck < timeIntArr[i][0]) {
+                        if (i > 0 ) {
+                            if (hourToCheck > timeIntArr[i-1][0]) {
+                                pos = i;
+                            }
+                        } else {
+                            pos = i;
+                        }
+                        
+                    }
+                }
+            }
+            return {
+                isOpened: false,
+                pos: pos
             }
         }
         return msg;
@@ -194,31 +246,42 @@ class OpeningHours {
         for (let i = 0; i <= 6; i++) {
             dayIndex = i + 1;
             dayIndex === 7 ? dayIndex = 0 : dayIndex = dayIndex;
-            let calcHrs = ohData[dayIndex].openingHr + ohData[dayIndex].closingHr;
-            let calcMins = ohData[dayIndex].openingMin + ohData[dayIndex].closingMin;
             html+= '<tr class="oh-table__row">';
             html+= '<td class="oh-table__day">';
             html+= '<span class="oh-table__day--holiday-icon"><i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp</span>';
             html+= _self.days[dayIndex];
             html+= '</td>'
             html+= '<td class="oh-table__hours">';
-            if (calcHrs + calcMins !== 0 ) {
-                html+= meridiemTime(ohData[dayIndex].openingHr) + ':' + normalizeDigit(ohData[dayIndex].openingMin) + '<sup>a.m.</sup> - ';
-                html+= meridiemTime(ohData[dayIndex].closingHr) + ':' + normalizeDigit(ohData[dayIndex].closingMin) + '<sup>p.m.</sup>';
-            } else {
-                html+= 'closed';
-            }
+            html+= buildOHDay(ohData[dayIndex]);
             html+= '</td></tr>';
         }
         html = '<table class="oh-table" id="main-opening-hours">' + html + '</table>';
         return html;
 
+        // helper functions
+        function buildOHDay(ohDataPerDay) {
+            let html = '';
+            let countHrsMins = 0;
+            ohDataPerDay.map((ohPerDay, ind) => {
+                countHrsMins += ohDataPerDay[ind][0] + ohDataPerDay[ind][1];
+                html += meridiemTime(ohDataPerDay[ind][0]) + ':' + normalizeDigit(ohDataPerDay[ind][1]) + '<sup>' + meridiemTimeAbbr(ohDataPerDay[ind][0]) + '</sup>';
+                ind%2 === 1 ? html += '&nbsp;&nbsp;&nbsp;' : html+= '&nbsp;&mdash;&nbsp;';
+            })
+            if (countHrsMins === 0) {
+                return 'closed';
+            }
+            return html;
+        }
         function normalizeDigit(num) {
             return num > 9 ? '' + num : '0' + num;
         }
         function meridiemTime(num) {
             return num > 12 ? num-12 : num;
         }
+        function meridiemTimeAbbr(num) {
+            return num > 12 ? 'p.m.' : 'a.m.';
+        }
+        
     }
 }
 
