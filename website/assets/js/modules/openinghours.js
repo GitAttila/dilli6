@@ -20,50 +20,6 @@ class OpeningHours {
         this.ohMsg = '';
         this.curCountdownHrs = 0;
         this.curCountdownMins = 0;
-        // this.oh = [
-        //     {
-        //         openingHr: 0,  //Sunday
-        //         openingMin: 0,
-        //         closingHr: 0,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,
-        //         openingMin: 0,
-        //         closingHr: 23,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,
-        //         openingMin: 0,
-        //         closingHr: 23,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,
-        //         openingMin: 0,
-        //         closingHr: 23,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,
-        //         openingMin: 0,
-        //         closingHr: 23,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,
-        //         openingMin: 0,
-        //         closingHr: 24,
-        //         closingMin: 0
-        //     },
-        //     {
-        //         openingHr: 11,  //Saturday
-        //         openingMin: 0,
-        //         closingHr: 24,
-        //         closingMin: 0
-        //     }
-        // ];
         this.oh = [
             [[12,0],[22,0]], //Sunday
             [[11,0],[15,0],[17,0],[22,0]],
