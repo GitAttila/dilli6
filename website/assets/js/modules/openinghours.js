@@ -221,7 +221,7 @@ class OpeningHours {
             ohDataPerDay.map((ohPerDay, ind) => {
                 countHrsMins += ohDataPerDay[ind][0] + ohDataPerDay[ind][1];
                 html += meridiemTime(ohDataPerDay[ind][0]) + ':' + normalizeDigit(ohDataPerDay[ind][1]) + '<sup>' + meridiemTimeAbbr(ohDataPerDay[ind][0]) + '</sup>';
-                ind%2 === 1 ? html += '&nbsp;&nbsp;&nbsp;' : html+= '&nbsp;&mdash;&nbsp;';
+                ind%2 === 1 ? html += '<br>' : html+= '&nbsp;&mdash;&nbsp;';
             })
             if (countHrsMins === 0) {
                 return 'closed';
