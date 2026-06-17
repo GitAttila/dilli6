@@ -1,16 +1,27 @@
 # DILLI6 website
 
-Prerequisites:
-Node.js and npm.
+Legacy website project for DILLI6 (Indian bistro and bar).
 
-After cloning or copying the project from the git repo, run the following commands in the terminal:
+## Prerequisites
 
-1. `npm install`
-2. `npm run build`
-3. `npm run watch`
+- Node.js
+- npm
 
-The final project ready to be deployed on a server can be found within the `dist` folder (after `npm run build` was run).
+## Quick start
 
-4. `npm run preview`
+```bash
+npm install
+npm run build
+npm run watch
+```
 
-This runs a preview server on the `dist` folder so the project can be checked before deployment.
+## Available scripts
+
+- `npm run build`: creates a production build in `dist/`
+- `npm run watch`: starts local dev server and watches source files
+- `npm run preview`: serves the built `dist/` output for final check
+
+## Notes
+
+- This is a legacy Gulp/Webpack project kept for maintenance purposes.
+- On modern Node versions, build scripts use a compatibility flag internally.
